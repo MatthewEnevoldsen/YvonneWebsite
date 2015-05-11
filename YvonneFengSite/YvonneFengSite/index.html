@@ -1,15 +1,41 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en">
+
+<html lang="en" ng-app="YvonnesArt">
 <head>
-    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="app/Biography/biographyController.js"></script>
+    <script src="app/Contact/contactController.js"></script>
+    <script src="app/app.js"></script>
+    <!--<meta charset="utf-8" />-->
     <title>TypeScript HTML App</title>
-    <link rel="stylesheet" href="app.css" type="text/css" />
-    <script src="app.js"></script>
+    <!--<link rel="stylesheet" href="app.css" type="text/css" />-->
+    <!--<script src="app\app.js"></script>-->
 </head>
 <body>
-    <h1>TypeScript HTML App</h1>
 
-    <div id="content"></div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Angular Routing Example</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="#"><i class="fa fa-home"></i> Home</a></li>-->
+                <li><a href="#Biography"><i class="fa fa-shield"></i> Bio</a></li>
+                <li><a href="#Contact"><i class="fa fa-comment"></i> Contact</a></li>
+                <!--<li><a href="#Drawings"><i class="fa fa-shield"></i> Drawings</a></li>
+                <li><a href="#Paintings"><i class="fa fa-comment"></i> Paintings</a></li>
+                <li><a href="#News"><i class="fa fa-shield"></i> News</a></li>-->
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div ng-view>        </div>
+    </div>
 </body>
 </html>
