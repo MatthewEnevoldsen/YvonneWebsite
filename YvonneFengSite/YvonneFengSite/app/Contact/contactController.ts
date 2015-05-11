@@ -3,7 +3,7 @@
         static $inject = ['$scope'];
 
         constructor(private $scope: ContactScope) {
-            $scope.message = "SomeEmail";
+            $scope.message = "Yvonne.wyf@gmail.com";
         }
     }
 
