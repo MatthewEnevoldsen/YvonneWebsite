@@ -34,6 +34,41 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Icon.png" />
     <Content Include="index.html" />
+    <Content Include="Resources\Drawings\large\10pm, 2014, ink on paper, 53 x 38 cm.jpg" />
+    <Content Include="Resources\Drawings\large\C0415, 2014, ink on Chinese paper, 45.5 x 69.5.jpg" />
+    <Content Include="Resources\Drawings\large\Chop, 2014, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\large\Hand, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\large\Scan, charcoal on paper, 38 x 26 cm.jpg" />
+    <Content Include="Resources\Drawings\large\Sit, 2014, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\large\Sleepless five years ahead, 2014, ink on paper, 53 x 38cm.jpg" />
+    <Content Include="Resources\Drawings\large\Spray, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\large\Unblock, 2014, ink on paper, 53 x 38 cm.jpg" />
+    <Content Include="Resources\Drawings\large\You are one of us, 2014, ink on Chinese paper, 45.5 x 69.5cm.jpg" />
+    <Content Include="Resources\Drawings\large\_1.jpg" />
+    <Content Include="Resources\Drawings\medium\10pm, 2014, ink on paper, 53 x 38 cm.jpg" />
+    <Content Include="Resources\Drawings\medium\C0415, 2014, ink on Chinese paper, 45.5 x 69.5.jpg" />
+    <Content Include="Resources\Drawings\medium\Chop, 2014, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\medium\Hand, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\medium\Scan, charcoal on paper, 38 x 26 cm.jpg" />
+    <Content Include="Resources\Drawings\medium\Sit, 2014, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\medium\Sleepless five years ahead, 2014, ink on paper, 53 x 38cm.jpg" />
+    <Content Include="Resources\Drawings\medium\Spray, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\medium\Unblock, 2014, ink on paper, 53 x 38 cm.jpg" />
+    <Content Include="Resources\Drawings\medium\You are one of us, 2014, ink on Chinese paper, 45.5 x 69.5cm.jpg" />
+    <Content Include="Resources\Drawings\medium\_1.jpg" />
+    <Content Include="Resources\Drawings\medium\_notes\dwsync.xml" />
+    <Content Include="Resources\Drawings\thumb\10pm, 2014, ink on paper, 53 x 38 cm.jpg" />
+    <Content Include="Resources\Drawings\thumb\C0415, 2014, ink on Chinese paper, 45.5 x 69.5.jpg" />
+    <Content Include="Resources\Drawings\thumb\Chop, 2014, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\thumb\Hand, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\thumb\Scan, charcoal on paper, 38 x 26 cm.jpg" />
+    <Content Include="Resources\Drawings\thumb\Sit, 2014, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\thumb\Sleepless five years ahead, 2014, ink on paper, 53 x 38cm.jpg" />
+    <Content Include="Resources\Drawings\thumb\Spray, ink on paper, 42 x 29.7 cm.jpg" />
+    <Content Include="Resources\Drawings\thumb\Unblock, 2014, ink on paper, 53 x 38 cm.jpg" />
+    <Content Include="Resources\Drawings\thumb\You are one of us, 2014, ink on Chinese paper, 45.5 x 69.5cm.jpg" />
+    <Content Include="Resources\Drawings\thumb\_1.jpg" />
+    <Content Include="Resources\Drawings\thumb\_notes\dwsync.xml" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -822,6 +857,8 @@
     <TypeScriptCompile Include="app\app.ts" />
     <TypeScriptCompile Include="app\Biography\biographyController.ts" />
     <TypeScriptCompile Include="app\Contact\contactController.ts" />
+    <TypeScriptCompile Include="app\Drawings\drawingsController.ts" />
+    <TypeScriptCompile Include="app\News\newsController.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
@@ -855,6 +892,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\shared\" />
+    <Folder Include="Resources\Pictures\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
