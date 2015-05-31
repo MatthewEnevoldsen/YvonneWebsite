@@ -20,6 +20,8 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="app\Contact\Contact.html" />
+    <Content Include="app\Home\Home.html" />
+    <Content Include="app\NavBar\NavBar.html" />
     <Content Include="app\News\News.html" />
     <Content Include="app\Drawings\Drawings.html" />
     <Content Include="app\Biography\Biography.html" />
@@ -28,9 +30,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\font-awesome.css" />
-    <Content Include="Content\font-awesome.min.css" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Icon.png" />
     <Content Include="index.html" />
@@ -90,6 +90,10 @@
     <Content Include="Scripts\angular-scenario.js" />
     <Content Include="Scripts\angular-touch.js" />
     <Content Include="Scripts\angular-touch.min.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.min.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap.js" />
+    <Content Include="Scripts\angular-ui\ui-bootstrap.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -843,10 +847,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -858,6 +858,10 @@
     <TypeScriptCompile Include="app\Biography\biographyController.ts" />
     <TypeScriptCompile Include="app\Contact\contactController.ts" />
     <TypeScriptCompile Include="app\Drawings\drawingsController.ts" />
+    <TypeScriptCompile Include="app\Home\homeController.ts" />
+    <TypeScriptCompile Include="app\Images\images.ts" />
+    <TypeScriptCompile Include="app\Images\imagesController.ts" />
+    <TypeScriptCompile Include="app\NavBar\navBar.ts" />
     <TypeScriptCompile Include="app\News\newsController.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />

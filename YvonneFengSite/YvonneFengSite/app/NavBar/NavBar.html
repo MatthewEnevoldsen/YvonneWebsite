@@ -1,0 +1,38 @@
+﻿<div class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Home</a>
+        </div>
+
+        <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true">
+            <ul class="nav navbar-nav">
+                <li><a href="#Biography">Bio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#News">News</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#Drawings">Drawings <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#Drawings">New</a></li>
+                        <li><a href="#Drawings">Archive</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#Paintings">Paintings <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#Paintings">New</a></li>
+                        <li><a href="#Paintings">Archive</a></li>
+                    </ul>
+                </li>
+            </ul>            
+        </div>
+    </nav>
+</div>
+<br />
+<br />
+<br />

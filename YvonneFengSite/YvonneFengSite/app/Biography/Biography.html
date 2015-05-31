@@ -8,12 +8,20 @@
             </tr>
         </table>
     </div>
-    <table>
-        <tr ng-repeat="events in section.datedEvents">
-            <td width="125">
-                {{events.date}}
-            </td>
-        <td width="125" ng-repeat="event in events.events">{{event}}</td>
-        </tr>
-    </table>
+    <div class="container">
+        <div ng-repeat="events in section.datedEvents">
+            <div class="row">
+                <div class="col-lg-2">
+                    {{events.date}}
+                </div>
+                <div class="row">
+                    <div ng-repeat="event in events.events">
+                        <div class="col-lg-10">
+                            {{event}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
