@@ -12,6 +12,7 @@
     <script src="Scripts/angular-route.js"></script>
     <script src="Scripts/angular-ui/ui-bootstrap.js"></script>
     <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="Scripts/underscore.js"></script>
 
     <script src="app/Home/homeController.js"></script>
     <script src="app/Drawings/drawingsController.js"></script>
@@ -21,14 +22,11 @@
     <script src="app/app.js"></script>
 
     <title>Yvonne Feng</title>
-
-
 </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <body>
     <div ng-include="'app/NavBar/NavBar.html'" ng-controller="navBarController">
-        <h1>{{title}}</h1>
     </div>
-    
     <div id="main">
         <div ng-view></div>
     </div>

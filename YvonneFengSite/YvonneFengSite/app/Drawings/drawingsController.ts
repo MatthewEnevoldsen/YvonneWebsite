@@ -1,8 +1,19 @@
-﻿module Drawings {
+﻿/// <reference path="../../scripts/typings/underscore/underscore.d.ts" />
+
+module Drawings {
     export class Controller {
         static $inject = ['$scope'];
 
         constructor($scope: DrawingsScope) {
+            function collapseArray<T>(array: T[], elements: number): T[][] {
+                var result: T[][] = [[]];
+                var arrayCopy = array.slice();
+                while (arrayCopy.length) {
+                    result.push(arrayCopy.splice(0, 10));
+                }
+                return result;
+            }
+
             var fileList: string[] = [
                 "Resources/Drawings/large/10pm, 2014, ink on paper, 53 x 38 cm.jpg",
                 "Resources/Drawings/large/C0415, 2014, ink on Chinese paper, 45.5 x 69.5.jpg",
@@ -16,16 +27,41 @@
                 "Resources/Drawings/large/Unblock, 2014, ink on paper, 53 x 38 cm.jpg",
                 "Resources/Drawings/large/_1.jpg"
             ];
-            $scope.pictures = fileList;
+            $scope.pictures = _.shuffle<string>(fileList);
+            $scope.picturesPerRow = 6;
+            $scope.pictureColWidth = 12 / $scope.picturesPerRow;
+            $scope.pictureRows = collapseArray<string>($scope.pictures, $scope.picturesPerRow);
 
+            $scope.selectedPicture = $scope.pictures[0];
+            $scope.unselectedPictures = _.rest<string>($scope.pictures);
+            $scope.selectPicture = function (newPicture: string) {
+                $scope.selectedPicture = newPicture;
+                $scope.unselectedPictures = _.filter<string>($scope.pictures, function (pic: string) {
+                    return pic !== newPicture;
+                });
+            }
         }
+
+
+        //private collapseArray<T>(array: T[], elements: number): T[][] {
+        //    var result: T[][];
+        //    var arrayCopy = array.slice();
+        //    while (arrayCopy.length) {
+        //        result.push(arrayCopy.splice(0, 10));
+        //    }
+        //    return result;
+        //}
+
     }
 
     interface DrawingsScope extends ng.IScope {
         pictures: string[];
-        colWidth: (screenSize: string) => number;
-        numRows: (screenSize: string) => number;
-        clickImage: (imageId: number) => void;
+        pictureRows: string[][];
+        picturesPerRow: number;
+        pictureColWidth: number;
+        selectedPicture: string;
+        unselectedPictures: string[];
+        selectPicture: (newPicture: string) => void;
     }
 }
 
