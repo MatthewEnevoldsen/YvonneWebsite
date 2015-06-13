@@ -21,11 +21,12 @@
     <Content Include="app.css" />
     <Content Include="app\Contact\Contact.html" />
     <Content Include="app\Home\Home.html" />
+    <TypeScriptCompile Include="app\Helpers\filepaths.ts" />
+    <TypeScriptCompile Include="app\Images\imageController.ts" />
+    <Content Include="app\Images\Images.html" />
     <Content Include="app\NavBar\NavBar.html" />
     <Content Include="app\News\News.html" />
-    <Content Include="app\Drawings\Drawings.html" />
     <Content Include="app\Biography\Biography.html" />
-    <Content Include="app\Paintings\Paintings.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -856,9 +857,10 @@
     <Content Include="Scripts\npm.js" />
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
+    <TypeScriptCompile Include="app\Helpers\arrays.ts" />
     <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
-    <Content Include="Tests\HowToUnitTest.js" />
-    <Content Include="Tests\Tests.js" />
+    <Content Include="Tests\HelperTests.js" />
+    <Content Include="Tests\ControllerTests.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -868,8 +870,8 @@
     <TypeScriptCompile Include="app\Drawings\drawingsController.ts" />
     <TypeScriptCompile Include="app\Home\homeController.ts" />
     <TypeScriptCompile Include="app\Images\images.ts" />
-    <TypeScriptCompile Include="app\Images\imagesController.ts" />
-    <TypeScriptCompile Include="app\NavBar\navBar.ts" />
+    <TypeScriptCompile Include="app\Images\imageManager.ts" />
+    <TypeScriptCompile Include="app\NavBar\navBarController.ts" />
     <TypeScriptCompile Include="app\News\newsController.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
@@ -905,11 +907,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\Paintings\" />
     <Folder Include="app\shared\" />
     <Folder Include="Resources\Pictures\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
