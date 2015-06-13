@@ -5,8 +5,6 @@ module Images {
     export class Manager {
 
         public selectedImage: ImageDetails;
-        public picColWidth: number;
-        public pictureRows: ImageDetails[][];
         public selectImage = function (newPicture: ImageDetails) {
             this.selectedImage = newPicture;
         };
@@ -21,9 +19,6 @@ module Images {
         };
 
         constructor(public images: ImageDetails[]) {
-            var picsPerRow = 4;
-            this.picColWidth = 12 / picsPerRow;
-            this.pictureRows = ArrayExt.chunks(images, picsPerRow);
             this.selectedImage = null;
         }
     }
