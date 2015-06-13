@@ -16,20 +16,14 @@
     <!--</div>-->
     <div class="row">
         <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-            <img src="{{manager.selectedPicture.path}}" />
-            {{manager.selectedPicture.name}}
+            <img src="{{manager.selectedImage.path}}" class="img-responsive"/>
+            <p>{{manager.selectedImage.name}}</p>
         </div>
     </div>
-    <div class="row" ng-repeat="row in pictureRows">
-        <div class="col-lg-{{manager.pictureColWidth}}" ng-repeat="pic in row">
-            <img src="{{pic.path}}" />
-            {{pic.name}}
+    <div class="row" ng-repeat="row in manager.pictureRows">
+        <div class="col-lg-{{manager.picColWidth}}" ng-repeat="pic in row">
+            <img src="{{pic.path}}" class="img-responsive" ng-click="manager.selectImage(pic)" />
+            <!--<p>{{pic.name}}</p>-->
         </div>
     </div>
-    <!--<div class="row" ng-repeat="pictureRow in picturesRows">
-        <div class="col-lg-{{pictureColWidth}} col-md-{{pictureColWidth}} col-sm-{{pictureColWidth}} col-xs-{{pictureColWidth}}" ng-repeat="picture in pictureRow">
-
-        </div>
-    </div>-->
-
 </div>

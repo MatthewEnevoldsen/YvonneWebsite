@@ -4,19 +4,29 @@
 module Images {
     export class Manager {
 
-
-        constructor(public images: ImageDetails[]) {
+        public selectedImage: ImageDetails;
+        public unselectedImages: ImageDetails[];
+        public picColWidth: number;
+        public pictureRows: ImageDetails[][];
+        public selectImage: (image: ImageDetails) => void;
+        public unselectImage: () => void;
+        
+        constructor(images: ImageDetails[]) {
             var shuffledImages = _.shuffle<ImageDetails>(images);
-            var picturesPerRow = 6;
-            var pictureColWidth = 12 / picturesPerRow;
-            var pictureRows = ArrayExt.chunks(shuffledImages, picturesPerRow);
-            var selectedPicture = shuffledImages[0];
-            var unselectedPictures = _.rest(shuffledImages);
-            var selectPicture = function (newPicture: ImageDetails) {
-                selectedPicture = newPicture;
-                unselectedPictures = _.filter(shuffledImages, function (pic) {
+            var picsPerRow = 12;
+            this.picColWidth = 12 / picsPerRow;
+            this.pictureRows = ArrayExt.chunks(shuffledImages, picsPerRow);
+            this.selectedImage = shuffledImages[0];
+            this.unselectedImages = _.rest(shuffledImages);
+            this.selectImage = function (newPicture: ImageDetails) {
+                this.selectedImage = newPicture;
+                this.unselectedImages = shuffledImages.filter(function (pic) {
                     return pic !== newPicture;
                 });
+            }
+            this.unselectImage = function () {
+                this.selectedImage = null;
+                this.unselectedImages = shuffledImages;
             }
         }
     }
