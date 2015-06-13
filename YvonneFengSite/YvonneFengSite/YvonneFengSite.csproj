@@ -857,9 +857,9 @@
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
+    <Content Include="Tests\HowToUnitTest.js" />
     <Content Include="Tests\Tests.js" />
     <Content Include="web.config" />
-    <TypeScriptCompile Include="Tests\Tests.ts" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.ts" />

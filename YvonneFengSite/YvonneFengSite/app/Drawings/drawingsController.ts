@@ -54,7 +54,7 @@ module Drawings {
 
     }
 
-    interface DrawingsScope extends ng.IScope {
+    export interface DrawingsScope extends ng.IScope {
         pictures: string[];
         pictureRows: string[][];
         picturesPerRow: number;
