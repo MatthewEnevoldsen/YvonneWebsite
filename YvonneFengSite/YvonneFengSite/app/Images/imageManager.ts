@@ -5,33 +5,31 @@ module Images {
     export class Manager {
 
         public selectedImage: ImageDetails;
-        public unselectedImages: ImageDetails[];
         public picColWidth: number;
         public pictureRows: ImageDetails[][];
-        public selectImage: (image: ImageDetails) => void;
-        public unselectImage: () => void;
-        
-        constructor(images: ImageDetails[]) {
-            var shuffledImages = _.shuffle<ImageDetails>(images);
-            var picsPerRow = 12;
+        public selectImage = function (newPicture: ImageDetails) {
+            this.selectedImage = newPicture;
+        };
+        public selectImageById = function (id: number) {
+            this.selectImage(this.images.filter(function (image: ImageDetails) { return image.id == id; })[0]);
+        };
+        public unselectImage = function () {
+            this.selectImage(null);
+        };
+        public isImageSelected = function () {
+            return this.selectedImage != null;
+        };
+
+        constructor(public images: ImageDetails[]) {
+            var picsPerRow = 4;
             this.picColWidth = 12 / picsPerRow;
-            this.pictureRows = ArrayExt.chunks(shuffledImages, picsPerRow);
-            this.selectedImage = shuffledImages[0];
-            this.unselectedImages = _.rest(shuffledImages);
-            this.selectImage = function (newPicture: ImageDetails) {
-                this.selectedImage = newPicture;
-                this.unselectedImages = shuffledImages.filter(function (pic) {
-                    return pic !== newPicture;
-                });
-            }
-            this.unselectImage = function () {
-                this.selectedImage = null;
-                this.unselectedImages = shuffledImages;
-            }
+            this.pictureRows = ArrayExt.chunks(images, picsPerRow);
+            this.selectedImage = null;
         }
     }
 
     export interface ImageDetails {
+        id: number;
         path: string;
         name: string;
     }

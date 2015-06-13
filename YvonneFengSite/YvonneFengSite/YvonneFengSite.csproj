@@ -861,6 +861,8 @@
     <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
     <Content Include="Tests\HelperTests.js" />
     <Content Include="Tests\ControllerTests.js" />
+    <Content Include="Tests\Resources\Test.bmp" />
+    <Content Include="Tests\Resources\Test2.bmp" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
