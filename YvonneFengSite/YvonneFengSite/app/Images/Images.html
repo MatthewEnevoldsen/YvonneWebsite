@@ -1,23 +1,55 @@
 ﻿<h1>Hello, world!</h1>
 <p>drawings</p>
-
-<div ng-show="manager.isImageSelected()" style="ali">
+<link type="text/css" href="app/Images/images.css" rel="stylesheet" />
+<div ng-show="manager.isImageSelected()" class="fade">
+    <p>Single image view</p>
     <div class="row">
         <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
             <img src="{{manager.selectedImage.path}}" class="img-responsive" />
             <p>{{manager.selectedImage.name}}</p>
         </div>
     </div>
+    <button ng-click="manager.selectNextImage()">Next!</button>
+    <button ng-click="manager.unselectImage()">Back!</button>
+    <button ng-click="manager.selectPreviousImage()">Previous!</button>
 </div>
-<div ng-hide="manager.isImageSelected()">
-    <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="pic in manager.images">
+
+<div ng-hide="manager.isImageSelected()" class="fade">
+
+    <p>Many images view</p>
+
+    <div ng-repeat="pic in manager.images">
+        <img src="{{pic.path}}" class="img" />
+    </div>
+
+    <!--<img src="{{pic.path}}" ng-repeat="pic in manager.images" class="img"/>-->
+    <!--<div class="row">
+        <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4" ng-repeat="pic in manager.images">
             <a href="#Drawings/{{pic.id}}">
-                <!--<img src="{{pic.path}}" class="img-responsive center-block" style="max-width:150px;align-self:center;vertical-align:central;padding:10px;" />-->
-                <div style="max-width: 500px;height: 200px;overflow: auto;">
-                    <img src="{{pic.path}}" class="img-responsive center-block" style="padding:4px;width:auto;height:auto;max-height:100%; max-width:100%;" />
-                </div> 
+                <div class="imgdivbs pull-left">
+                    <img src="{{pic.path}}" class="img-responsive center-block img pull-left" />
+                </div>
             </a>
         </div>
-    </div>
+    </div>-->
+    <!--<div masonry>
+        <div class="masonry-brick" ng-repeat="pic in manager.images">
+            <img ng-src="{{ pic.path }}" alt="A masonry brick">
+        </div>
+    </div>-->
+
 </div>
+
+
+
+
+<!--<link type="text/css" href="app/Images/images.css" rel="stylesheet" />
+<div ng-show="show" class="fade">
+    Show and hide me
+</div>
+<button ng-click="show=!show">Toggle</button>
+
+<div ng-class="{on:onOff}" class="highlight">
+    Highlight this box
+</div>
+<button ng-click="onOff=!onOff">Toggle</button>-->

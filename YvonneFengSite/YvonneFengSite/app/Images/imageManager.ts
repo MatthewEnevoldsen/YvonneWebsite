@@ -1,8 +1,10 @@
 ﻿/// <reference path="../helpers/arrays.ts" />
+/// <reference path="../../scripts/typings/angularjs/angular.d.ts" />
 /// <reference path="../../scripts/typings/underscore/underscore.d.ts" />
 
 module Images {
     export class Manager {
+        private location: ng.ILocationService;
 
         public selectedImage: ImageDetails;
         public selectImage = function (newPicture: ImageDetails) {
@@ -10,16 +12,25 @@ module Images {
         };
         public selectImageById = function (id: number) {
             this.selectImage(this.images.filter(function (image: ImageDetails) { return image.id == id; })[0]);
+            this.location.path('/Drawings/' + id.toString());
         };
         public unselectImage = function () {
             this.selectImage(null);
+            this.location.path('/Drawings');
         };
         public isImageSelected = function () {
             return this.selectedImage != null;
         };
+        public selectNextImage = function () {
+            this.selectImageById((this.selectedImage.id + 1) % this.images.length);
+        };
+        public selectPreviousImage = function () {
+            this.selectImageById((this.selectedImage.id - 1) % this.images.length);
+        };
 
-        constructor(public images: ImageDetails[]) {
+        constructor(public images: ImageDetails[],  $location: ng.ILocationService) {
             this.selectedImage = null;
+            this.location = $location;
         }
     }
 
