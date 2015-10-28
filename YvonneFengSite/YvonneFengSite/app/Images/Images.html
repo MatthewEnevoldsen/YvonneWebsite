@@ -1,46 +1,59 @@
 ﻿<h1>Hello, world!</h1>
 <p>drawings</p>
+<!--<link type="text/css" href="app/Images/images.css" rel="stylesheet" />-->
 <link type="text/css" href="app/Images/images.css" rel="stylesheet" />
 <div ng-show="manager.isImageSelected()" class="fade">
     <p>Single image view</p>
     <div class="row">
-        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-            <img src="{{manager.selectedImage.path}}" class="img-responsive" />
+        <div class="col-lg-1 col-sm-1 col-md-1 col-xs-12">
+            <a ng-click="manager.selectNextImage()">Next!</a><br />
+            <a ng-click="manager.unselectImage()">Back!</a><br />
+            <a ng-click="manager.selectPreviousImage()">Previous!</a><br />
             <p>{{manager.selectedImage.name}}</p>
         </div>
+        <div class="col-lg-11 col-sm-11 col-md-11 col-xs-12">
+            <img src="{{manager.selectedImage.path}}" class="singleImg img-responsive" />
+        </div>
     </div>
-    <button ng-click="manager.selectNextImage()">Next!</button>
-    <button ng-click="manager.unselectImage()">Back!</button>
-    <button ng-click="manager.selectPreviousImage()">Previous!</button>
+
 </div>
 
 <div ng-hide="manager.isImageSelected()" class="fade">
-
-    <p>Many images view</p>
-
-    <div ng-repeat="pic in manager.images">
-        <img src="{{pic.path}}" class="img" />
+    <p class="ptest">Many images view</p>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-repeat="pic in manager.images">
+            <div ng-repeat="pic in manager.images">
+                <a href="#Drawings/{{pic.id}}">
+                    <div class="imgdivbs">
+                        <img src="{{pic.path}}" class="img img-responsive" /> <!-- img-responsive center-block img pull-left" />-->
+                    </div>
+                    <p>
+                        {{pic.name}}
+                    </p>
+                </a>
+            </div>
+        </div>
     </div>
-
-    <!--<img src="{{pic.path}}" ng-repeat="pic in manager.images" class="img"/>-->
-    <!--<div class="row">
-        <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4" ng-repeat="pic in manager.images">
-            <a href="#Drawings/{{pic.id}}">
-                <div class="imgdivbs pull-left">
-                    <img src="{{pic.path}}" class="img-responsive center-block img pull-left" />
-                </div>
-            </a>
-        </div>
-    </div>-->
-    <!--<div masonry>
-        <div class="masonry-brick" ng-repeat="pic in manager.images">
-            <img ng-src="{{ pic.path }}" alt="A masonry brick">
-        </div>
-    </div>-->
-
 </div>
 
+<div ng-hide="manager.isImageSelected()" class="fade">
+    <p class="ptest">Many images view</p>
+    <div class="row">
+        <div ng-repeat="pic in manager.images">
+            <a href="#Drawings/{{pic.id}}">
+                <img src="{{pic.path}}" class="img img-responsive" /> <!-- img-responsive center-block img pull-left" />-->
+                <p>
+                    {{pic.name}}
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
 
+<div class="aspectwrapper">
+    <div class="content">
+    </div>
+</div>
 
 
 <!--<link type="text/css" href="app/Images/images.css" rel="stylesheet" />

@@ -1,0 +1,70 @@
+﻿.fade.ng-hide {
+    transition: 1s linear all;
+    opacity: 0.5;
+}
+
+.fade {
+    opacity: 1;
+}
+
+.highlight {
+    transition: 0.5s linear all;
+}
+
+.highlight.on-add {
+    background: white;
+}
+
+.highlight.on {
+    background: yellow;
+}
+
+.highlight.on-remove {
+    background: black;
+}
+
+.imgdivbs {
+    /*position: relative;
+    max-width:1000px;
+    width:1000px;
+    float: left;
+    height: 1500px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding:7px;
+    grid-column-align:start;*/
+}
+
+body {
+  min-height : 100%;
+  min-width : 100%;
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+}
+
+.singleImg{
+    float: left;
+    width:auto;
+    max-width:500px;
+}
+
+.img {
+    padding:7px;
+    width:auto;
+    height:auto;
+    max-width:1000px;
+    /*max-height:2000px;*/ 
+}
+
+.imgdivsimple {
+
+}
+
+.ptest {
+
+    font-size:large;
+}
