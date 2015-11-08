@@ -5,20 +5,30 @@
         constructor(private $scope: NavBarScope) {
             $scope.message = "Yvonne.wyf@gmail.com";
             $scope.name = "Whatup";
-            $scope.items = [
-                "The first choice!",
-                "And another choice for you.",
-                "but wait! A third!"
+            $scope.categories = [
+                new Category("Bio", "#Biography", null),
+                new Category("Contact", "#Contact", null),
+                new Category("News", "#News", null),
+                new Category("Drawings", null, [new Category("New", "#Drawings", null), new Category("Archived", "#Drawings", null)]),
+                new Category("Paintings", null, [new Category("New", "#Drawings", null), new Category("Archived", "#Drawings", null)]),
             ];
-            $scope.title = "the title";
+            $scope.title = "Home";
         }
     }
 
     interface NavBarScope extends ng.IScope {
         message: string
         name: string
-        items: string[]
+        categories: Category[]
         title: string
+    }
+
+    class Category {
+        constructor(public title: string,
+            public link: string,
+            public subCategories: Category[]) {
+        }
+
     }
 }
 

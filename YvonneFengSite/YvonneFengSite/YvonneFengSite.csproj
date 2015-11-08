@@ -26,6 +26,7 @@
     <TypeScriptCompile Include="app\Images\imageController.ts" />
     <Content Include="app\Images\images.css" />
     <Content Include="app\Images\Images.html" />
+    <Content Include="app\NavBar\navBar.css" />
     <Content Include="app\NavBar\NavBar.html" />
     <Content Include="app\News\News.html" />
     <Content Include="app\Biography\Biography.html" />

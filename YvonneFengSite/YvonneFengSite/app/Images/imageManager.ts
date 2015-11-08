@@ -38,6 +38,8 @@ module Images {
         id: number;
         path: string;
         name: string;
+        //year: number;
+        
     }
 }
 

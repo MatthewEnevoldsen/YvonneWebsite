@@ -1,5 +1,6 @@
-﻿<div class="navbar navbar-static-top">
-    <nav class="navbar navbar-default" role="navigation">
+﻿<link href="navBar.css" rel="stylesheet" />
+<div class="navbar navbar-static-top" >
+    <nav class="navbar navbar-default" role="navigation" >
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
                 <span class="sr-only">Toggle navigation</span>
@@ -9,27 +10,18 @@
             </button>
             <a class="navbar-brand" href="#">Home</a>
         </div>
-
+        <br />
+        <br />
+        <br/>
         <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true">
             <ul class="nav navbar-nav">
-                <li><a href="#Biography">Bio</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#News">News</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#Drawings">Drawings <b class="caret"></b></a>
+                <li ng-repeat="category in categories"><a href="{{category.link}}" ng-show="{{category.subCategories === null}}">{{category.title}}</a>
+                    <a class="dropdown-toggle" ng-hide="{{category.subCategories === null}}" href="{{category.link}}">{{category.title}}<b class=" caret" ></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#Drawings">New</a></li>
-                        <li><a href="#Drawings">Archive</a></li>
+                        <li ng-repeat="subCat in category.subCategories"><a href="{{subCat.link}}">{{subCat.title}}</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#Paintings">Paintings <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#Paintings">New</a></li>
-                        <li><a href="#Paintings">Archive</a></li>
-                    </ul>
-                </li>
-            </ul>            
+            </ul>
         </div>
     </nav>
 </div>
