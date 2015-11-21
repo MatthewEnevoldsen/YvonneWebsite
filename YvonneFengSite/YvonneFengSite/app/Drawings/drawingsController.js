@@ -26,7 +26,7 @@ var Drawings;
             ];
             var id = 1;
             var imageDetails = fileList.map(function (filepath) {
-                return { id: id++, path: filepath, name: Filepaths.getFilename(filepath) };
+                return { id: id++, path: filepath, name: Filepaths.getFilename(filepath), year: 3000, medium: "Crayon", width: 100, height: 100 };
             });
             _super.call(this, $scope, $routeParams, $location, imageDetails);
         }

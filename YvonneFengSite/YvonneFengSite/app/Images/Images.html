@@ -1,68 +1,59 @@
-﻿<h1>Hello, world!</h1>
-<p>drawings</p>
-<!--<link type="text/css" href="app/Images/images.css" rel="stylesheet" />-->
-<link type="text/css" href="app/Images/images.css" rel="stylesheet" />
-<div ng-show="manager.isImageSelected()" class="fade">
-    <p>Single image view</p>
-    <div class="row">
-        <div class="col-lg-1 col-sm-1 col-md-1 col-xs-12">
+﻿<link rel="stylesheet" type="text/css" href="app/Images/images.css" />
+<div ng-show="manager.isImageSelected()">
+    <div style="height:100%; display:block" class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1>{{manager.selectedImage.name}}</h1>
+        </div>
+        <div class="col-lg-11 col-sm-10 col-md-10 col-xs-12"
+             style="background:url('{{manager.selectedImage.path}}'); 
+             height:500px; 
+             background-repeat:no-repeat; 
+             max-width:1000px">
+            <!--<img src="{{manager.selectedImage.path}}" class="singleImg img-responsive" />-->
+            <!--<p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>-->
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+            <p class="ptest">bacon</p>
+
+        </div>
+        <div class="col-lg-1 col-sm-2 col-md-2 col-xs-12 bottom-align-text">
             <a ng-click="manager.selectNextImage()">Next!</a><br />
+            <p>{{manager.selectedImage.year}}</p>
+            <p>{{manager.selectedImage.medium}}</p>
+            <p>{{manager.selectedImage.width + "x" + manager.selectedImage.height}}</p>
             <a ng-click="manager.selectPreviousImage()">Back!</a><br />
             <a ng-click="manager.unselectImage()">BailThisShip!</a><br />
-            <p>{{manager.selectedImage.name}}</p>
-        </div>
-        <div class="col-lg-11 col-sm-11 col-md-11 col-xs-12">
-            <img src="{{manager.selectedImage.path}}" class="singleImg img-responsive" />
-        </div>
-    </div>
-
-</div>
-
-<div ng-hide="manager.isImageSelected()" class="fade">
-    <p class="ptest">Many images view</p>
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" ng-repeat="pic in manager.images">
-            <div ng-repeat="pic in manager.images">
-                <a href="#Drawings/{{pic.id}}">
-                    <div class="imgdivbs">
-                        <img src="{{pic.path}}" class="img img-responsive" /> <!-- img-responsive center-block img pull-left" />-->
-                    </div>
-                    <p>
-                        {{pic.name}}
-                    </p>
-                </a>
-            </div>
         </div>
     </div>
 </div>
 
-<div ng-hide="manager.isImageSelected()" class="fade">
+<!--<div ng-hide="manager.isImageSelected()" class="fade">
     <p class="ptest">Many images view</p>
     <div class="row">
         <div ng-repeat="pic in manager.images">
             <a href="#Drawings/{{pic.id}}">
-                <img src="{{pic.path}}" class="img img-responsive" /> <!-- img-responsive center-block img pull-left" />-->
+                <img src="{{pic.path}}" class="img img-responsive" />
                 <p>
                     {{pic.name}}
                 </p>
             </a>
         </div>
     </div>
-</div>
-
-<div class="aspectwrapper">
-    <div class="content">
-    </div>
-</div>
-
-
-<!--<link type="text/css" href="app/Images/images.css" rel="stylesheet" />
-<div ng-show="show" class="fade">
-    Show and hide me
-</div>
-<button ng-click="show=!show">Toggle</button>
-
-<div ng-class="{on:onOff}" class="highlight">
-    Highlight this box
-</div>
-<button ng-click="onOff=!onOff">Toggle</button>-->
+</div>-->

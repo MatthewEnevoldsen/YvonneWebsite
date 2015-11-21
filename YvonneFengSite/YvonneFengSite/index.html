@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 
 
-<html lang="en" ng-app="YvonnesArt">
+<html lang="en" ng-app="YvonnesArt" style="height:100%">
 <head>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.css" rel="stylesheet" />
@@ -39,19 +39,13 @@
     <title>Yvonne Feng</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<body>
-    <div class="row">
-        <div class="col-lg-2 col-md-2 col-sm-3" max-width="1000px">
-            <div ng-include="'app/NavBar/NavBar.html'" ng-controller="navBarController">
-            </div>
-        </div>
-        <div class="col-lg-10 col-md-10 col-sm-9">
-
-            <div id="main">
-                <div ng-view></div>
-            </div>
-
-        </div>
+<body style="height:100%">
+    <div ng-include="'app/NavBar/NavBar.html'" ng-controller="navBarController">
     </div>
+
+    <div id="main" style="height:100%">
+        <div ng-view style="height:100%"></div>
+    </div>
+
 </body>
 </html>

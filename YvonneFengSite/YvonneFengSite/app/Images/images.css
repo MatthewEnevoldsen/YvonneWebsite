@@ -1,12 +1,4 @@
-﻿.fade.ng-hide {
-    transition: 1s linear all;
-    opacity: 0.5;
-}
-
-.fade {
-    opacity: 1;
-}
-
+﻿
 .highlight {
     transition: 0.5s linear all;
 }
@@ -23,17 +15,33 @@
     background: black;
 }
 
+@media (min-width: 768px ) {
+  .row {
+      position: relative;
+  }
+
+  .bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
 .imgdivbs {
-    /*position: relative;
+    position: relative;
     max-width:1000px;
-    width:1000px;
-    float: left;
+    width:100px;
     height: 1500px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
     padding:7px;
-    grid-column-align:start;*/
+    grid-column-align:start;
+}
+
+.bgImage {
+    /*min-height:1000px;
+    background-repeat: no-repeat;*/
 }
 
 body {
@@ -41,15 +49,18 @@ body {
   min-width : 100%;
   background-size:100% 100%;
   background-repeat:no-repeat;
-  overflow-y: hidden;
+  /*overflow-y: hidden;*/
   overflow-x: hidden;
 
 }
 
 .singleImg{
-    float: left;
-    width:auto;
-    max-width:500px;
+    /*float: left;*/
+    width:100%;
+    display:block;
+    /*max-height:100%;
+    max-width:100%;*/
+    /*max-width:500px;*/
 }
 
 .img {
@@ -65,6 +76,6 @@ body {
 }
 
 .ptest {
-
+    color:aqua;
     font-size:large;
 }

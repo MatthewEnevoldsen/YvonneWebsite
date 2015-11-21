@@ -22,7 +22,7 @@ module Drawings {
             ];
             var id: number = 1;
             var imageDetails: Images.ImageDetails[] = fileList.map(function (filepath) {
-                return {id:id++, path: filepath, name: Filepaths.getFilename(filepath) };
+                return {id:id++, path: filepath, name: Filepaths.getFilename(filepath), year: 3000, medium: "Crayon", width:100,height:100 };
             });
             super($scope, $routeParams, $location, imageDetails);
         }

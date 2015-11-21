@@ -12,4 +12,4 @@ var Images;
     })();
     Images.Controller = Controller;
 })(Images || (Images = {}));
-//# sourceMappingURL=imagecontroller.js.map
+//# sourceMappingURL=imageController.js.map
