@@ -40,8 +40,8 @@
 }
 
 .bgImage {
-    /*min-height:1000px;
-    background-repeat: no-repeat;*/
+    background-size: 100%;
+    min-height: 500px;
 }
 
 body {
@@ -56,8 +56,8 @@ body {
 
 .singleImg{
     /*float: left;*/
-    width:100%;
-    display:block;
+    /*width:100%;
+    display:block;*/
     /*max-height:100%;
     max-width:100%;*/
     /*max-width:500px;*/

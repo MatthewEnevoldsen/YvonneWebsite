@@ -864,6 +864,7 @@
     <Content Include="Scripts\underscore.js" />
     <Content Include="Scripts\underscore.min.js" />
     <TypeScriptCompile Include="app\Helpers\arrays.ts" />
+    <TypeScriptCompile Include="app\shared\resizeDirective.ts" />
     <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
     <Content Include="Tests\HelperTests.js" />
     <Content Include="Tests\ControllerTests.js" />
@@ -916,7 +917,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\Paintings\" />
-    <Folder Include="app\shared\" />
     <Folder Include="Resources\Pictures\" />
   </ItemGroup>
   <ItemGroup>

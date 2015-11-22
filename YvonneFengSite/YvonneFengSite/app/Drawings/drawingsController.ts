@@ -4,9 +4,9 @@
 
 module Drawings {
     export class Controller extends Images.Controller{
-        static $inject = ['$scope', '$routeParams', '$location'];
+        static $inject = ['$scope', '$routeParams', '$location', '$window'];
 
-        constructor($scope: Images.ImageScope, $routeParams: Images.ImagesRouteService, $location: ng.ILocationService){
+        constructor($scope: Images.ImageScope, $routeParams: Images.ImagesRouteService, $location: ng.ILocationService, $window: ng.IWindowService){
             var fileList: string[] = [
                 "Resources/Drawings/large/10pm, 2014, ink on paper, 53 x 38 cm.jpg",
                 "Resources/Drawings/large/C0415, 2014, ink on Chinese paper, 45.5 x 69.5.jpg",
@@ -24,7 +24,7 @@ module Drawings {
             var imageDetails: Images.ImageDetails[] = fileList.map(function (filepath) {
                 return {id:id++, path: filepath, name: Filepaths.getFilename(filepath), year: 3000, medium: "Crayon", width:100,height:100 };
             });
-            super($scope, $routeParams, $location, imageDetails);
+            super($scope, $routeParams, $location, $window, imageDetails);
         }
     }
 

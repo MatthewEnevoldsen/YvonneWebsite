@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 
 
-<html lang="en" ng-app="YvonnesArt" style="height:100%">
+<html lang="en" ng-app="YvonnesArt">
 <head>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.css" rel="stylesheet" />
@@ -43,8 +43,15 @@
     <div ng-include="'app/NavBar/NavBar.html'" ng-controller="navBarController">
     </div>
 
-    <div id="main" style="height:100%">
-        <div ng-view style="height:100%"></div>
+    <!--<div ng-controller="empty" ng-style="style()" resize>
+        window.height: {{windowHeight}}
+        <br />window.width: {{windowWidth}}
+        <br />test: {{test}}
+        <br />
+    </div>-->
+
+    <div id="main">
+        <div ng-view></div>
     </div>
 
 </body>

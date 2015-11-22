@@ -4,34 +4,8 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h1>{{manager.selectedImage.name}}</h1>
         </div>
-        <div class="col-lg-11 col-sm-10 col-md-10 col-xs-12"
-             style="background:url('{{manager.selectedImage.path}}'); 
-             height:500px; 
-             background-repeat:no-repeat; 
-             max-width:1000px">
-            <!--<img src="{{manager.selectedImage.path}}" class="singleImg img-responsive" />-->
-            <!--<p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>-->
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-            <p class="ptest">bacon</p>
-
+        <div class="col-lg-11 col-sm-10 col-md-10 col-xs-12 bgImage" resize>    
+            <img src="{{manager.selectedImage.path}}" class="singleImg img-responsive" style="{{'height: ' + windowHeight - 200 + 'px'}}" />
         </div>
         <div class="col-lg-1 col-sm-2 col-md-2 col-xs-12 bottom-align-text">
             <a ng-click="manager.selectNextImage()">Next!</a><br />
