@@ -30,8 +30,7 @@ var AngularDefinition;
         .controller('homeController', Home.Controller)
         .controller('contactController', Contact.Controller)
         .controller('empty', function ($scope) { $scope.test = "hello"; })
-        .controller('drawingsController', Drawings.Controller)
-        .controller('drawingController', Drawings.Controller)
+        .controller('imageController', Images.Controller)
         .controller('navBarController', NavBar.Controller)
         .config(function ($routeProvider) {
         $routeProvider.when('/', {
@@ -46,17 +45,16 @@ var AngularDefinition;
         }).when('/Contact', {
             templateUrl: 'app/Contact/Contact.html',
             controller: 'contactController'
-        }).when('/Drawings', {
+        }).when('/Collections', {
             templateUrl: 'app/Images/Images.html',
-            controller: 'drawingsController'
-        }).when('/Drawings/:imageId', {
+            controller: 'imageController'
+        }).when('/Collections/:collectionName', {
             templateUrl: 'app/Images/Images.html',
-            controller: 'drawingsController'
-        }).when('/Drawings/:imageId', {
+            controller: 'imageController'
+        }).when('/Collections/:collectionName/:imageId', {
             templateUrl: 'app/Images/Images.html',
-            controller: 'drawingsController'
-        })
-            .otherwise('/');
+            controller: 'imageController'
+        }).otherwise('/');
     });
 })(AngularDefinition || (AngularDefinition = {}));
 document.title = "Yvonne Feng";

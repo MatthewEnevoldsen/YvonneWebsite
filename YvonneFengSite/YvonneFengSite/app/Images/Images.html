@@ -1,6 +1,6 @@
 ﻿<link rel="stylesheet" type="text/css" href="app/Images/images.css" />
 <div ng-show="manager.isImageSelected()">
-    <div style="height:100%; display:block" class="row">
+    <div class="row">
         <div class="col-lg-1  col-md-1  col-sm-1  col-xs-12" ></div>
         <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12" resize>    
             <img src="{{manager.selectedImage.path}}" class="singleImg img-responsive" style="{{'max-height: ' + (windowHeight - 350) + 'px'}}" />
@@ -19,11 +19,11 @@
     </div>
 </div>
 
-<!--<div ng-hide="manager.isImageSelected()" class="fade">
+<div ng-hide="manager.isImageSelected()">
     <p class="ptest">Many images view</p>
     <div class="row">
-        <div ng-repeat="pic in manager.images">
-            <a href="#Drawings/{{pic.id}}">
+        <div ng-repeat="pic in manager.images.images" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 imgdivsimple">
+            <a href="{{manager.images.name}}/{{pic.id}}">
                 <img src="{{pic.path}}" class="img img-responsive" />
                 <p>
                     {{pic.name}}
@@ -31,4 +31,4 @@
             </a>
         </div>
     </div>
-</div>-->
+</div>

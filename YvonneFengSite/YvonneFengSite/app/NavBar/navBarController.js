@@ -9,8 +9,8 @@ var NavBar;
                 new Category("Bio", "#Biography", null),
                 new Category("Contact", "#Contact", null),
                 new Category("News", "#News", null),
-                new Category("Work", null, [new Category("I", "#Work", null), new Category("II", "#Work", null)]),
-                new Category("Drawing", "#Drawings", null),
+                new Category("Work", null, [new Category("I", "#Collections/WorkI", null), new Category("II", "#Collections/WorkII", null)]),
+                new Category("Drawing", "#Collections/Drawings", null),
             ];
             $scope.title = "Home";
         }

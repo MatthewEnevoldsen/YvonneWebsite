@@ -876,7 +876,6 @@
     <TypeScriptCompile Include="app\app.ts" />
     <TypeScriptCompile Include="app\Biography\biographyController.ts" />
     <TypeScriptCompile Include="app\Contact\contactController.ts" />
-    <TypeScriptCompile Include="app\Drawings\drawingsController.ts" />
     <TypeScriptCompile Include="app\Home\homeController.ts" />
     <TypeScriptCompile Include="app\Images\images.ts" />
     <TypeScriptCompile Include="app\Images\imageManager.ts" />
@@ -916,7 +915,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\Paintings\" />
     <Folder Include="Resources\Pictures\" />
   </ItemGroup>
   <ItemGroup>

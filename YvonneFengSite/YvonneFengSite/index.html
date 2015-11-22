@@ -25,7 +25,6 @@
 
     <script src="app/Biography/biographyController.js"></script>
     <script src="app/Contact/contactController.js"></script>
-    <script src="app/Drawings/drawingsController.js"></script>
     <script src="app/Home/homeController.js"></script>
     <script src="app/Images/imagemanager.js"></script>
     <script src="app/Images/images.js"></script>
@@ -42,13 +41,6 @@
 <body style="height:100%">
     <div ng-include="'app/NavBar/NavBar.html'" ng-controller="navBarController">
     </div>
-
-    <!--<div ng-controller="empty" ng-style="style()" resize>
-        window.height: {{windowHeight}}
-        <br />window.width: {{windowWidth}}
-        <br />test: {{test}}
-        <br />
-    </div>-->
 
     <div id="main">
         <div ng-view></div>

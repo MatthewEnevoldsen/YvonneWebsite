@@ -30,4 +30,4 @@ var Shared;
     })();
     Shared.MyDirective = MyDirective;
 })(Shared || (Shared = {}));
-//# sourceMappingURL=resizedirective.js.map
+//# sourceMappingURL=resizeDirective.js.map

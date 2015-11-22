@@ -35,8 +35,7 @@ module AngularDefinition {
         .controller('homeController', Home.Controller)
         .controller('contactController', Contact.Controller)
         .controller('empty', function ($scope: any) { $scope.test = "hello"; })
-        .controller('drawingsController', Drawings.Controller)
-        .controller('drawingController', Drawings.Controller)
+        .controller('imageController', Images.Controller)
         .controller('navBarController', NavBar.Controller)
         .config(function ($routeProvider: ng.route.IRouteProvider) {
         $routeProvider.when('/', {
@@ -51,21 +50,16 @@ module AngularDefinition {
         }).when('/Contact', {
             templateUrl: 'app/Contact/Contact.html',
             controller: 'contactController'
-        }).when('/Drawings', {
+        }).when('/Collections', {
             templateUrl: 'app/Images/Images.html',
-            controller: 'drawingsController'
-        }).when('/Drawings/:imageId', {
+            controller: 'imageController'
+        }).when('/Collections/:collectionName', {
             templateUrl: 'app/Images/Images.html',
-            controller: 'drawingsController'
-        }).when('/Drawings/:imageId', {
+            controller: 'imageController'
+        }).when('/Collections/:collectionName/:imageId', {
             templateUrl: 'app/Images/Images.html',
-            controller: 'drawingsController'
-        })
-            //.when('/Paintings', {
-            //templateUrl: 'app/Images/Images.html',
-            //controller: 'paintingsController'
-            //})
-            .otherwise('/');
+            controller: 'imageController'
+        }).otherwise('/');
     });
 }
 
