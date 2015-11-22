@@ -33,11 +33,5 @@ var Images;
         return Manager;
     })();
     Images.Manager = Manager;
-    var ImageCollection = (function () {
-        function ImageCollection() {
-        }
-        return ImageCollection;
-    })();
-    Images.ImageCollection = ImageCollection;
 })(Images || (Images = {}));
 //# sourceMappingURL=imageManager.js.map

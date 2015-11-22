@@ -56,7 +56,6 @@
                     ]
                 }
             ];
-
             this.manager = new Manager(_.filter(this.work, function (coll: ImageCollection) { return coll.name == $routeParams.collectionName; })[0] , $location);
             $scope.manager = this.manager;
             if ($routeParams.imageId)

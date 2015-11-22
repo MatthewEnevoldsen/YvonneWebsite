@@ -26,7 +26,7 @@ module Images {
             this.selectImageById((this.selectedImage.id + 1) % this.images.images.length);
         };
         public selectPreviousImage = function () {
-            this.selectImageById((this.selectedImage.id - 1) % this.images.images.length);
+            this.selectImageById((this.selectedImage.id - 1) % this.images.images.length );
         };
 
         constructor(public images: ImageCollection,  $location: ng.ILocationService) {
@@ -45,8 +45,8 @@ module Images {
         height: number;
     }
 
-    export class ImageCollection {
-        public name: string;
-        public images: ImageDetails[];
+    export interface ImageCollection {
+        name: string;
+        images: ImageDetails[];
     }
 }
