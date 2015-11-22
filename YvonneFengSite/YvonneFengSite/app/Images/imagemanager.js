@@ -1,6 +1,7 @@
 /// <reference path="../helpers/arrays.ts" />
 /// <reference path="../../scripts/typings/angularjs/angular.d.ts" />
 /// <reference path="../../scripts/typings/underscore/underscore.d.ts" />
+/// <reference path="imagecontroller.ts" />
 var Images;
 (function (Images) {
     var Manager = (function () {
@@ -10,21 +11,21 @@ var Images;
                 this.selectedImage = newPicture;
             };
             this.selectImageById = function (id) {
-                this.selectImage(this.images.filter(function (image) { return image.id == id; })[0]);
-                this.location.path('/' + this.images.name + '/' + id.toString());
+                this.selectImage(_.filter(this.images.images, function (image) { return image.id == id; })[0]);
+                this.location.path('/Collections/' + this.images.name + '/' + id.toString());
             };
             this.unselectImage = function () {
                 this.selectImage(null);
-                this.location.path('/' + this.images.nameS);
+                this.location.path('/Collections/' + this.images.name);
             };
             this.isImageSelected = function () {
                 return this.selectedImage != null;
             };
             this.selectNextImage = function () {
-                this.selectImageById((this.selectedImage.id + 1) % this.images.length);
+                this.selectImageById((this.selectedImage.id + 1) % this.images.images.length);
             };
             this.selectPreviousImage = function () {
-                this.selectImageById((this.selectedImage.id - 1) % this.images.length);
+                this.selectImageById((this.selectedImage.id - 1) % this.images.images.length);
             };
             this.selectedImage = null;
             this.location = $location;

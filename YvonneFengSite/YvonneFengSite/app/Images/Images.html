@@ -13,21 +13,17 @@
             <p>{{manager.selectedImage.width + "x" + manager.selectedImage.height}}</p><br />
             <button ng-click="manager.selectPreviousImage()"><</button>
             <button ng-click="manager.selectNextImage()">></button>
-            <a ng-click="manager.unselectImage()">BailThisShip!</a><br />
+            <a ng-click="manager.unselectImage()">Collection</a><br />
         </div>
         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" ></div>
     </div>
 </div>
 
 <div ng-hide="manager.isImageSelected()">
-    <p class="ptest">Many images view</p>
     <div class="row">
         <div ng-repeat="pic in manager.images.images" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 imgdivsimple">
-            <a href="{{manager.images.name}}/{{pic.id}}">
+            <a href="{{'#Collections/' + manager.images.name + '/' + pic.id}}">
                 <img src="{{pic.path}}" class="img img-responsive" />
-                <p>
-                    {{pic.name}}
-                </p>
             </a>
         </div>
     </div>
