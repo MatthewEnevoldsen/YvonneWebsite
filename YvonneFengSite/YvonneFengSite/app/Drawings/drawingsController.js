@@ -10,7 +10,7 @@ var Drawings;
 (function (Drawings) {
     var Controller = (function (_super) {
         __extends(Controller, _super);
-        function Controller($scope, $routeParams, $location, $window) {
+        function Controller($scope, $routeParams, $location) {
             var fileList = [
                 "Resources/Drawings/large/10pm, 2014, ink on paper, 53 x 38 cm.jpg",
                 "Resources/Drawings/large/C0415, 2014, ink on Chinese paper, 45.5 x 69.5.jpg",
@@ -28,9 +28,9 @@ var Drawings;
             var imageDetails = fileList.map(function (filepath) {
                 return { id: id++, path: filepath, name: Filepaths.getFilename(filepath), year: 3000, medium: "Crayon", width: 100, height: 100 };
             });
-            _super.call(this, $scope, $routeParams, $location, $window, imageDetails);
+            _super.call(this, $scope, $routeParams, $location, imageDetails);
         }
-        Controller.$inject = ['$scope', '$routeParams', '$location', '$window'];
+        Controller.$inject = ['$scope', '$routeParams', '$location'];
         return Controller;
     })(Images.Controller);
     Drawings.Controller = Controller;
