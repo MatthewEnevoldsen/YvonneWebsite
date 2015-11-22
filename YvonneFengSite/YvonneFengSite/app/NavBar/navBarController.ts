@@ -9,8 +9,8 @@
                 new Category("Bio", "#Biography", null),
                 new Category("Contact", "#Contact", null),
                 new Category("News", "#News", null),
-                new Category("Drawings", null, [new Category("New", "#Drawings", null), new Category("Archived", "#Drawings", null)]),
-                new Category("Paintings", null, [new Category("New", "#Drawings", null), new Category("Archived", "#Drawings", null)]),
+                new Category("Work", null, [new Category("I", "#Work", null), new Category("II", "#Work", null)]),
+                new Category("Drawing","#Drawings", null),
             ];
             $scope.title = "Home";
         }

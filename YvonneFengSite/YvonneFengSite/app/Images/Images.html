@@ -3,16 +3,16 @@
     <div style="height:100%; display:block" class="row">
         <div class="col-lg-1  col-md-1  col-sm-1  col-xs-12" ></div>
         <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12" resize>    
-            <img src="{{manager.selectedImage.path}}" class="singleImg img-responsive" style="{{'height: ' + (windowHeight - 350) + 'px'}}" />
+            <img src="{{manager.selectedImage.path}}" class="singleImg img-responsive" style="{{'max-height: ' + (windowHeight - 350) + 'px'}}" />
         </div>
         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"  ></div>
         <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 bottom-align-text">
             <p>{{manager.selectedImage.name}}</p>
             <p>{{manager.selectedImage.year}}</p>
             <p>{{manager.selectedImage.medium}}</p>
-            <p>{{manager.selectedImage.width + "x" + manager.selectedImage.height}}</p>
-            <a ng-click="manager.selectNextImage()">Next!</a><br />
-            <a ng-click="manager.selectPreviousImage()">Back!</a><br />
+            <p>{{manager.selectedImage.width + "x" + manager.selectedImage.height}}</p><br />
+            <button ng-click="manager.selectPreviousImage()"><</button>
+            <button ng-click="manager.selectNextImage()">></button>
             <a ng-click="manager.unselectImage()">BailThisShip!</a><br />
         </div>
         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" ></div>
