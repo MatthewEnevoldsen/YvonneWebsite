@@ -27,6 +27,14 @@
     grid-column-align:start;
 }
 
+.noOutline{
+    outline:none;
+}
+
+.workTitle{
+    font-style:italic;
+}
+
 body {
   min-height : 100%;
   min-width : 100%;

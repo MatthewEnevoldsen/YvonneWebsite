@@ -25,7 +25,12 @@ var Images;
                 this.selectImageById((this.selectedImage.id + 1) % this.images.images.length);
             };
             this.selectPreviousImage = function () {
-                this.selectImageById((this.selectedImage.id - 1) % this.images.images.length);
+                var nextId;
+                if (this.selectedImage.id == 0)
+                    nextId = this.images.images.length - 1;
+                else
+                    nextId = (this.selectedImage.id - 1);
+                this.selectImageById(nextId);
             };
             this.selectedImage = null;
             this.location = $location;
