@@ -33,10 +33,10 @@ module AngularDefinition {
         })
         .controller('biographyController', Biography.Controller)
         .controller('homeController', Home.Controller)
-        .controller('contactController', Contact.Controller)
-        .controller('empty', function ($scope: any) { $scope.test = "hello"; })
-        .controller('imageController', Images.Controller)
         .controller('navBarController', NavBar.Controller)
+        .controller('textController', TextPage.Controller)
+        .controller('contactController', Contact.Controller)
+        .controller('imageController', Images.Controller)
         .config(function ($routeProvider: ng.route.IRouteProvider) {
         $routeProvider.when('/', {
             templateUrl: 'app/Home/Home.html',
@@ -50,6 +50,9 @@ module AngularDefinition {
         }).when('/Contact', {
             templateUrl: 'app/Contact/Contact.html',
             controller: 'contactController'
+        }).when('/Publications', {
+            templateUrl: 'app/Text/Text.html',
+            controller: 'textController'
         }).when('/Collections', {
             templateUrl: 'app/Images/Images.html',
             controller: 'imageController'

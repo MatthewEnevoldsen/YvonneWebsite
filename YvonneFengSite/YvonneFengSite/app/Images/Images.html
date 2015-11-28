@@ -1,21 +1,21 @@
 ﻿<link rel="stylesheet" type="text/css" href="app/Images/images.css" />
 <div ng-show="manager.isImageSelected()">
     <div class="row">
-        <div class="col-lg-1  col-md-1  col-sm-1  col-xs-12" ></div>
-        <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12" resize>    
+        <div class="col-lg-1  col-md-1  col-sm-1  col-xs-12"></div>
+        <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12" resize>
             <img src="{{manager.selectedImage.path}}" class="singleImg img-responsive" style="{{'max-height: ' + (windowHeight - 350) + 'px'}}" />
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"  ></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"></div>
         <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12 bottom-align-text">
-            <p class="workTitle">{{manager.selectedImage.name}}</p>
+            <p class="workTitle minHeight">{{manager.selectedImage.name}}</p>
             <p>{{manager.selectedImage.year}}</p>
-            <p>{{manager.selectedImage.medium}}</p>
+            <p class="minHeight">{{manager.selectedImage.medium}}</p>
             <p>{{manager.selectedImage.width + "x" + manager.selectedImage.height + "cm"}}</p><br />
             <button class="noOutline" ng-click="manager.selectPreviousImage()">&#9668;</button>
             <button class="noOutline" ng-click="manager.selectNextImage()">&#9658;</button>
             <a ng-click="manager.unselectImage()">Collection</a><br />
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12" ></div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12"></div>
     </div>
 </div>
 

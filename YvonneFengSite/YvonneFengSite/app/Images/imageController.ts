@@ -24,14 +24,37 @@
                             height: 38
                         },
                         {
-                            id:1,
+                            id: 1,
                             path: "Resources/Drawings/large/C0415, 2014, ink on Chinese paper, 45.5 x 69.5.jpg",
                             name: "C0415",
                             year: 2014,
                             medium: "ink on Chinese paper",
                             width: 45.5,
                             height: 69.5
-                        },                        
+                        },
+                    ]
+                },
+                {
+                    name: "Sketchbook",
+                    images: [
+                        {
+                            id: 0,
+                            path: "Resources/Drawings/large/10pm, 2014, ink on paper, 53 x 38 cm.jpg",
+                            name: "10pm",
+                            year: 2014,
+                            medium: "ink on paper",
+                            width: 53,
+                            height: 38
+                        },
+                        {
+                            id: 1,
+                            path: "Resources/Drawings/large/C0415, 2014, ink on Chinese paper, 45.5 x 69.5.jpg",
+                            name: "C0415",
+                            year: 2014,
+                            medium: "ink on Chinese paper",
+                            width: 45.5,
+                            height: 69.5
+                        },
                     ]
                 },
                 {
@@ -44,7 +67,6 @@
                         { id: 4, name: "Panegyric", year: 2015, medium: "charcoal and acrylic on canvas", width: 160, height: 200, path: "Resources/WorkI/Panegyric.jpg" },
                         { id: 5, name: "Final moment", year: 2015, medium: "charcoal,  ink and oil on canvas", width: 101.6, height: 76.2, path: "Resources/WorkI/Final moment.jpg" },
                         { id: 6, name: "The phone", year: 2013, medium: "acrylic on canvas", width: 180, height: 150, path: "Resources/WorkI/The phone.jpg" },
-
                     ]
                 },
                 {

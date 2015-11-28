@@ -27,6 +27,29 @@ var Images;
                     ]
                 },
                 {
+                    name: "Sketchbook",
+                    images: [
+                        {
+                            id: 0,
+                            path: "Resources/Drawings/large/10pm, 2014, ink on paper, 53 x 38 cm.jpg",
+                            name: "10pm",
+                            year: 2014,
+                            medium: "ink on paper",
+                            width: 53,
+                            height: 38
+                        },
+                        {
+                            id: 1,
+                            path: "Resources/Drawings/large/C0415, 2014, ink on Chinese paper, 45.5 x 69.5.jpg",
+                            name: "C0415",
+                            year: 2014,
+                            medium: "ink on Chinese paper",
+                            width: 45.5,
+                            height: 69.5
+                        },
+                    ]
+                },
+                {
                     name: "WorkI",
                     images: [
                         { id: 0, name: "Don’t come back", year: 2014, medium: "charcoal and acrylic on canvas", width: 200, height: 150, path: "Resources/WorkI/Don't come back.jpg" },

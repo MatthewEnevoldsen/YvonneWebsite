@@ -20,8 +20,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="app\Text\text.css" />
+    <Content Include="app\Text\Text.html" />
     <Content Include="app\Contact\Contact.html" />
     <Content Include="app\Home\Home.html" />
+    <TypeScriptCompile Include="app\Text\textController.ts" />
     <TypeScriptCompile Include="app\Helpers\filepaths.ts" />
     <TypeScriptCompile Include="app\Images\imageController.ts" />
     <Content Include="app\Images\images.css" />
