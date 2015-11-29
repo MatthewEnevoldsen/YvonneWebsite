@@ -28,12 +28,16 @@ var AngularDefinition;
     })
         .controller('biographyController', Biography.Controller)
         .controller('homeController', Home.Controller)
+        .controller('newsController', News.Controller)
         .controller('navBarController', NavBar.Controller)
         .controller('textController', TextPage.Controller)
         .controller('contactController', Contact.Controller)
         .controller('imageController', Images.Controller)
         .config(function ($routeProvider) {
-        $routeProvider.when('/', {
+        $routeProvider.when('', {
+            templateUrl: 'app/Home/Home.html',
+            controller: 'homeController'
+        }).when('/', {
             templateUrl: 'app/Home/Home.html',
             controller: 'homeController'
         }).when('/Home', {
@@ -42,6 +46,9 @@ var AngularDefinition;
         }).when('/Biography', {
             templateUrl: 'app/Biography/Biography.html',
             controller: 'biographyController'
+        }).when('/News', {
+            templateUrl: 'app/News/News.html',
+            controller: 'newsController'
         }).when('/Contact', {
             templateUrl: 'app/Contact/Contact.html',
             controller: 'contactController'
@@ -57,7 +64,7 @@ var AngularDefinition;
         }).when('/Collections/:collectionName/:imageId', {
             templateUrl: 'app/Images/Images.html',
             controller: 'imageController'
-        }).otherwise('/');
+        }).otherwise('/Home');
     });
 })(AngularDefinition || (AngularDefinition = {}));
 document.title = "Yvonne Feng";

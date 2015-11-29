@@ -3,7 +3,7 @@ var Contact;
     var Controller = (function () {
         function Controller($scope) {
             this.$scope = $scope;
-            $scope.message = "Yvonne.wyf@gmail.com";
+            $scope.message = "Yvonne.ywf@gmail.com";
         }
         Controller.$inject = ['$scope'];
         return Controller;

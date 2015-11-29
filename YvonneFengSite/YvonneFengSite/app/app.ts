@@ -33,37 +33,44 @@ module AngularDefinition {
         })
         .controller('biographyController', Biography.Controller)
         .controller('homeController', Home.Controller)
+        .controller('newsController', News.Controller)
         .controller('navBarController', NavBar.Controller)
         .controller('textController', TextPage.Controller)
         .controller('contactController', Contact.Controller)
         .controller('imageController', Images.Controller)
         .config(function ($routeProvider: ng.route.IRouteProvider) {
-        $routeProvider.when('/', {
-            templateUrl: 'app/Home/Home.html',
-            controller: 'homeController'
-        }).when('/Home', {
-            templateUrl: 'app/Home/Home.html',
-            controller: 'homeController'
-        }).when('/Biography', {
-            templateUrl: 'app/Biography/Biography.html',
-            controller: 'biographyController'
-        }).when('/Contact', {
-            templateUrl: 'app/Contact/Contact.html',
-            controller: 'contactController'
-        }).when('/Publications', {
-            templateUrl: 'app/Text/Text.html',
-            controller: 'textController'
-        }).when('/Collections', {
-            templateUrl: 'app/Images/Images.html',
-            controller: 'imageController'
-        }).when('/Collections/:collectionName', {
-            templateUrl: 'app/Images/Images.html',
-            controller: 'imageController'
-        }).when('/Collections/:collectionName/:imageId', {
-            templateUrl: 'app/Images/Images.html',
-            controller: 'imageController'
-        }).otherwise('/');
-    });
+            $routeProvider.when('', {
+                templateUrl: 'app/Home/Home.html',
+                controller: 'homeController'
+            }).when('/', {
+                templateUrl: 'app/Home/Home.html',
+                controller: 'homeController'
+            }).when('/Home', {
+                templateUrl: 'app/Home/Home.html',
+                controller: 'homeController'
+            }).when('/Biography', {
+                templateUrl: 'app/Biography/Biography.html',
+                controller: 'biographyController'
+            }).when('/News', {
+                templateUrl: 'app/News/News.html',
+                controller: 'newsController'
+            }).when('/Contact', {
+                templateUrl: 'app/Contact/Contact.html',
+                controller: 'contactController'
+            }).when('/Publications', {
+                templateUrl: 'app/Text/Text.html',
+                controller: 'textController'
+            }).when('/Collections', {
+                templateUrl: 'app/Images/Images.html',
+                controller: 'imageController'
+            }).when('/Collections/:collectionName', {
+                templateUrl: 'app/Images/Images.html',
+                controller: 'imageController'
+            }).when('/Collections/:collectionName/:imageId', {
+                templateUrl: 'app/Images/Images.html',
+                controller: 'imageController'
+            }).otherwise('/Home');
+        });
 }
 
 document.title = "Yvonne Feng";
