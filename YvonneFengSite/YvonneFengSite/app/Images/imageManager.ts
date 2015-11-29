@@ -46,8 +46,7 @@ module Images {
         name: string;
         year: number;
         medium: string;
-        width: number;
-        height: number;
+        size: string;
     }
 
     export interface ImageCollection {
