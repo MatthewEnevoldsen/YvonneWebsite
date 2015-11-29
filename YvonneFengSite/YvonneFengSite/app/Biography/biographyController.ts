@@ -36,11 +36,15 @@
                         ]
                     },
                 ],
-                exhibitions: [
+                soloExhibitions: [{
+                    date: "2015",
+                    events: [{ exhibName: "An Amnesiac's Stories", venue: "Hundred Years Gallery, London" }]
+                }
+                ],
+                groupExhibitions: [
                     {
                         date: "2015",
-                        events: [{ exhibName: "An Amnesiac's Stories", venue: "Hundred Years Gallery, London" },
-                            { exhibName: "Creekside Open 2015", venue: "A.P.T Gallery, London" },
+                        events: [{ exhibName: "Creekside Open 2015", venue: "A.P.T Gallery, London" },
                             { exhibName: "Psychoanalytic research in the 21st century: Where we are now", venue: " Freud Museum, London " },
                             { exhibName: "Griffin Art Prize 2014 UK", venue: " White Moose Gallery, Barnstaple, Devon " }, ]
                     },
@@ -79,7 +83,8 @@
     class CV {
         education: YearedEvents[];
         awards: YearedEvents[];
-        exhibitions: YearedExhibitions[];
+        soloExhibitions: YearedExhibitions[];
+        groupExhibitions: YearedExhibitions[];
     }
 
     class YearedExhibitions {
