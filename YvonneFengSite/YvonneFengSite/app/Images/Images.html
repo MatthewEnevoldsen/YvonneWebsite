@@ -10,7 +10,7 @@
             <p class="workTitle minHeight">{{manager.selectedImage.name}}</p>
             <p>{{manager.selectedImage.year}}</p>
             <p class="minHeight">{{manager.selectedImage.medium}}</p>
-            <p>{{manager.selectedImage.width + "x" + manager.selectedImage.height + "cm"}}</p><br />
+            <p class="minHeight">{{manager.selectedImage.size}}</p><br />
             <button class="noOutline" ng-click="manager.selectPreviousImage()">&#9668;</button>
             <button class="noOutline" ng-click="manager.selectNextImage()">&#9658;</button>
             <a ng-click="manager.unselectImage()">Collection</a><br />
