@@ -3,86 +3,98 @@ var Biography;
     var Controller = (function () {
         function Controller($scope) {
             this.$scope = $scope;
-            this.getBio = function () {
-                return [
-                    new BioSection("Biography", [
-                        "Born in Guangdong, China, 1989",
-                        "Lives and works in London, UK"
-                    ], [
-                        new BioEvent("2012 - 2014", ["MA Fine Art Painting, The Royal College of Art, London, UK"]),
-                        new BioEvent("2008 - 2012", ["BA Fine Art, The Slade School of Fine Art, UCL, London, UK"])
-                    ]),
-                    new BioSection("Group Exhibitions", [], [
-                        new BioEvent("2015", [
-                            "Creekside Open 2015 selected by Lisa Milroy, A.P.T Gallery, London, UK",
-                            "Psychoanalytic research in the 21st century: Where we are now, Freud Museum, London, UK",
-                            "Griffin Art Prize 2014 UK, White Moose Gallery, Barnstaple, Devon, UK"
-                        ]),
-                        new BioEvent("2014", [
-                            "Starter, L'ESCARGOT, London, UK",
-                            "Now in Reverse, Hundred Years Gallery, London, UK",
-                            "Drawing from Here and There, Elysium Gallery Offsite, Swansea, UK",
-                            "Griffin Art Prize 2014 UK, Griffin Gallery, London, UK",
-                            "Beep 2014: A Portrait of the Artist as..., Elysium Gallery Offsite, Swansea, UK",
-                            "From Here and There: Drawings from Swansea to Colorado, Clara Hatton Gallery, Colorado State Univeristy, Fort Collins, USA",
-                            "Show RCA 2014, Royal College of Art, Battersea, London, UK",
-                            "You know, I...-Instinct with thinking!, Hockney Gallery, Royal College of Art, London, UK",
-                            "PNTG NOV. RCA 2nd Year MA Painting Show, Henry Moore Gallery, Royal College of Art, London, UK"
-                        ]),
-                        new BioEvent("2013", [
-                            "Notes to Self, Dyson Building Royal College of Art, London, UK",
-                            "Royal College of Art Fine Art Work in Progress Show,The Kensington Galleries, Royal College of Art, London, UK"
-                        ]),
-                        new BioEvent("2012", [
-                            "The Slade School of Fine Art BA/BFA Degree Show, The Slade School of Fine Art, UCL, London, UK",
-                            "Vincula, UCL Art Museum, UCL, London, UK",
-                            "New End Art Foundation Exhibition, New End Art Gallery, London, UK"
-                        ]),
-                        new BioEvent("2010-2011", [
-                            "EXHIBITIONISM, East Wing Nine (Part 3 Academy Hang), The Courtauld Institute of Art, London, UK"
-                        ]),
-                        new BioEvent("2010", [
-                            "Transfer-A Slade/Strang Collaboration, UCL Art Museum, UCL, London, UK"
-                        ])
-                    ]),
-                    new BioSection("Prizes", [], [
-                        new BioEvent("2014", [
-                            "Griffin Art Prize UK - Shortlist",
-                            "Art Graduates Prize (Herbert Smith Freehills & Works in Print) - Shortlist"
-                        ])
-                    ])
-                ];
+            //$scope.sections = this.getBio();
+            $scope.cv = {
+                education: [
+                    {
+                        year: "2014-",
+                        descs: ["PhD Fine Art (practice-led), Slade School of Fine Art, UCL, London"]
+                    },
+                    {
+                        year: "2014",
+                        descs: ["MA Painting, Royal College of Art, London"]
+                    },
+                    {
+                        year: "2012",
+                        descs: ["BA Fine Art, Slade School of Fine Art, UCL, London"]
+                    },
+                ],
+                awards: [
+                    {
+                        year: "2015",
+                        descs: ["Excellence in Drawing Award, The Arts Club Charitable Trust (winner)"]
+                    },
+                    {
+                        year: "2014",
+                        descs: [
+                            "MA Painting, Royal College of Art, London",
+                            "Art Graduates Prize, Herbert Smith Freehills & Works in Print (shortlisted)",
+                            "Beep2014: Wales’ International Contemporary Painting Prize (shortlisted)",
+                            "Griffin Art Prize (shortlisted)"
+                        ]
+                    },
+                ],
+                exhibitions: [
+                    {
+                        date: "2015",
+                        events: [{ exhibName: "An Amnesiac's Stories", venue: "Hundred Years Gallery, London" },
+                            { exhibName: "Creekside Open 2015", venue: "A.P.T Gallery, London" },
+                            { exhibName: "Psychoanalytic research in the 21st century: Where we are now", venue: " Freud Museum, London " },
+                            { exhibName: "Griffin Art Prize 2014 UK", venue: " White Moose Gallery, Barnstaple, Devon " },]
+                    },
+                    {
+                        date: "2014",
+                        events: [{ exhibName: "Now in Reverse", venue: "Hundred Years Gallery, London" },
+                            { exhibName: "Drawing from Here and There", venue: "Elysium Gallery Offsite, Swansea" },
+                            { exhibName: "Griffin Art Prize 2014 UK", venue: " Griffin Gallery, London" },
+                            { exhibName: "Beep 2014: A Portrait of the Artist as…", venue: " Elysium Gallery Offsite, Swansea" },
+                            { exhibName: "From Here and There: Drawings from Swansea to Colorado", venue: " Clara Hatton Gallery, Colorado State University, Fort Collins, USA " },
+                            { exhibName: "Show RCA 2014", venue: " Sackler Building, Royal College of Art, London" },
+                            { exhibName: "You know, I...-Instinct with thinking!", venue: " Hockney Gallery, Royal College of Art, London " },]
+                    },
+                    {
+                        date: "2013",
+                        events: [{ exhibName: "PNTG NOV. RCA Year 2 MA Painting Show", venue: " Henry Moore Gallery, Royal College of Art, London " },
+                            { exhibName: "Notes to Self", venue: " Dyson Building, Royal College of Art, London" },
+                            { exhibName: "Royal College of Art Fine Art Work in Progress Show", venue: " The Kensington Galleries, Royal College of Art, London" },]
+                    },
+                    {
+                        date: "2012",
+                        events: [{ exhibName: "The Slade School of Fine Art BA/BFA Degree Show", venue: " The Slade School of Fine Art, UCL, London " },
+                            { exhibName: "Vincula", venue: " UCL Art Museum, UCL, London " },
+                            { exhibName: "New End Art Foundation Exhibition", venue: " New End Art Gallery, London" },]
+                    },
+                    {
+                        date: "2010",
+                        events: [{ exhibName: "EXHIBITIONISM", venue: " East Wing Nine (Part 3 Academy Hang), The Courtauld Institute of Art, London " },
+                            { exhibName: "Transfer-A Slade/Strang Collaboration", venue: " UCL Art Museum, UCL, London" },]
+                    }
+                ],
             };
-            $scope.sections = this.getBio();
         }
         Controller.$inject = ['$scope'];
         return Controller;
     })();
     Biography.Controller = Controller;
-    var BioSection = (function () {
-        function BioSection(heading, events, datedEvents) {
-            this.heading = heading;
-            this.events = events;
-            this.datedEvents = datedEvents;
+    var CV = (function () {
+        function CV() {
         }
-        return BioSection;
+        return CV;
     })();
-    var BioEvent = (function () {
-        function BioEvent(date, events) {
-            this.date = date;
-            this.events = events;
+    var YearedExhibitions = (function () {
+        function YearedExhibitions() {
         }
-        return BioEvent;
+        return YearedExhibitions;
+    })();
+    var YearedEvents = (function () {
+        function YearedEvents() {
+        }
+        return YearedEvents;
+    })();
+    var Exhibition = (function () {
+        function Exhibition() {
+        }
+        return Exhibition;
     })();
 })(Biography || (Biography = {}));
-["Starter, L'ESCARGOT, London, UK",
-    "Now in Reverse, Hundred Years Gallery, London, UK",
-    "Drawing from Here and There, Elysium Gallery Offsite, Swansea, UK",
-    "Griffin Art Prize 2014 UK, Griffin Gallery, London, UK",
-    "Beep 2014: A Portrait of the Artist as..., Elysium Gallery Offsite, Swansea, UK",
-    "From Here and There: Drawings from Swansea to Colorado, Clara Hatton Gallery, Colorado State Univeristy, Fort Collins, USA",
-    "Show RCA 2014, Royal College of Art, Battersea, London, UK",
-    "You know, I...-Instinct with thinking!, Hockney Gallery, Royal College of Art, London, UK",
-    "PNTG NOV. RCA 2nd Year MA Painting Show, Henry Moore Gallery, Royal College of Art, London, UK"
-];
 //# sourceMappingURL=biographyController.js.map

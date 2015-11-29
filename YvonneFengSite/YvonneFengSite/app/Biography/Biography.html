@@ -1,27 +1,43 @@
-﻿<div ng-repeat="section in sections">
-    {{section.heading}}
-    <div ng-repeat="event in section.events">
-        <table>
-            <tr>
-                <td width="125"></td>
-                <td>{{event}}</td>
-            </tr>
-        </table>
-    </div>
-    <div class="container">
-        <div ng-repeat="events in section.datedEvents">
-            <div class="row">
-                <div class="col-lg-2">
-                    {{events.date}}
-                </div>
-                <div class="row">
-                    <div ng-repeat="event in events.events">
-                        <div class="col-lg-10">
-                            {{event}}
-                        </div>
-                    </div>
-                </div>
+﻿<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            Education
+        </div>
+        <div ng-repeat="yearedEd in cv.education">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                {{yearedEd.year}}
             </div>
+            <div ng-repeat="ed in yearedEd.descs" class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 ">
+                {{ed}}
+            </div>
+        </div>
+        <div ng-repeat="yearedAward in cv.awards">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                {{yearedAward.year}}
+            </div>
+            <div ng-repeat="award in yearedAward.descs" class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 ">
+                {{award}}
+            </div>
+        </div>
+        <div ng-repeat="yearedExhib in cv.exhibitions">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                {{yearedExhib.date}}
+            </div>
+            <div ng-repeat="exhib in yearedExhib.events" class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 ">
+                <em>{{exhib.exhibName}}</em>{{", " + exhib.venue}}
+            </div>
+        </div>
+
+
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-lg-offset-2 col-md-offset-2 col">
+
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
         </div>
     </div>
 </div>

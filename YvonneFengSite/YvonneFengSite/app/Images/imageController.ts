@@ -52,13 +52,13 @@
                 {
                     name: "WorkII",
                     images: [
-                        { id: 0, name: "Final moment", year: 2015, medium: "Charcoal,  ink and oil on canvas", size: "101.6x76.2cm", path: "Resources/WorkI/Final moment.jpg" },
-                        { id: 1, name: "Panegyric", year: 2015, medium: "Charcoal and acrylic on canvas", size: "160x200cm", path: "Resources/WorkI/Panegyric.jpg" },
-                        { id: 2, name: "Don’t come back", year: 2014, medium: "Charcoal and acrylic on canvas", size: "200x150cm", path: "Resources/WorkI/Don't come back.jpg" },
-                        { id: 3, name: "Must it be? It must be!", year: 2014, medium: "Charcoal and acrylic on canvas", size: "160x200cm", path: "Resources/WorkI/Must it be It must be.jpg" },
-                        { id: 4, name: "Video game", year: 2014, medium: "Charcoal and acrylic on canvas", size: "150x185cm", path: "Resources/WorkI/Video game.jpg" },
-                        { id: 5, name: "Mammogram", year: 2014, medium: "Charcoal and acrylic on canvas", size: "155x185cm", path: "Resources/WorkI/Mammogram.jpg" },
-                        { id: 6, name: "The phone", year: 2013, medium: "Acrylic on canvas", size: "180x150cm", path: "Resources/WorkI/The phone.jpg" },
+                        { id: 0, name: "Final moment", year: 2015, medium: "Charcoal,  ink and oil on canvas", size: "101.6x76.2cm", path: "Resources/WorkII/Final moment.jpg" },
+                        { id: 1, name: "Panegyric", year: 2015, medium: "Charcoal and acrylic on canvas", size: "160x200cm", path: "Resources/WorkII/Panegyric.jpg" },
+                        { id: 2, name: "Don’t come back", year: 2014, medium: "Charcoal and acrylic on canvas", size: "200x150cm", path: "Resources/WorkII/Don't come back.jpg" },
+                        { id: 3, name: "Must it be? It must be!", year: 2014, medium: "Charcoal and acrylic on canvas", size: "160x200cm", path: "Resources/WorkII/Must it be It must be.jpg" },
+                        { id: 4, name: "Video game", year: 2014, medium: "Charcoal and acrylic on canvas", size: "150x185cm", path: "Resources/WorkII/Video game.jpg" },
+                        { id: 5, name: "Mammogram", year: 2014, medium: "Charcoal and acrylic on canvas", size: "155x185cm", path: "Resources/WorkII/Mammogram.jpg" },
+                        { id: 6, name: "The phone", year: 2013, medium: "Acrylic on canvas", size: "180x150cm", path: "Resources/WorkII/The phone.jpg" },
                     ]
                 }
             ];
