@@ -27,7 +27,6 @@ var Biography;
                     {
                         year: "2014",
                         descs: [
-                            "MA Painting, Royal College of Art, London",
                             "Art Graduates Prize, Herbert Smith Freehills & Works in Print (shortlisted)",
                             "Beep2014: Wales’ International Contemporary Painting Prize (shortlisted)",
                             "Griffin Art Prize (shortlisted)"
