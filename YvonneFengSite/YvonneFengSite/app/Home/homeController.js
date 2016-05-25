@@ -3,7 +3,7 @@ var Home;
     var Controller = (function () {
         function Controller($scope) {
             this.$scope = $scope;
-            $scope.message = "What up mother fuckers! welcome to the website. I do love my flavour text";
+            $scope.message = "";
         }
         Controller.$inject = ['$scope'];
         return Controller;
