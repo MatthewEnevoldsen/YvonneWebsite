@@ -39,26 +39,28 @@
                 {
                     name: "WorkI",
                     images: [
-                        { id: 0, name: "Plaster/Phone", year: 2015, medium: "Oil on polyester and canvas", size: "101.5 x 61cm each", path: "Resources/WorkI/PlasterPhone.jpg" },
-                        { id: 1, name: "Shadow", year: 2015, medium: "Charcoal, acrylic and oil on canvas ", size: "130 x 170cm", path: "Resources/WorkI/Shadow.jpg" },
+                        { id: 0, name: "Up and down, in and out", year: 2016, medium: "Oil on canvas", size: "200 x 170cm", path: "Resources/WorkI/Up and down, in and out.jpg" },
+                        { id: 1, name: "Plaster/Phone", year: 2015, medium: "Oil on polyester and canvas", size: "101.5 x 61cm each", path: "Resources/WorkI/PlasterPhone.jpg" },
                         { id: 2, name: "Jade bracelet", year: 2015, medium: "Oil on board ", size: "40 x 60cm", path: "Resources/WorkI/Jade bracelet.jpg" },
-                        { id: 3, name: "Trace of cracks", year: 2015, medium: "Charcoal, acrylic and newsprint on canvas", size: "110 x 150cm", path: "Resources/WorkI/Trace of cracks.jpg" },
+                        { id: 3, name: "Shadow", year: 2015, medium: "Charcoal, acrylic and oil on canvas ", size: "130 x 170cm", path: "Resources/WorkI/Shadow.jpg" },
                         { id: 4, name: "Immersive darkness", year: 2015, medium: "Charcoal, graphite and acrylic on canvas", size: "120 x 120cm", path: "Resources/WorkI/Immersive darkness.jpg" },
-                        { id: 5, name: "Fence", year: 2015, medium: "Charcoal and ink on paper", size: "150 x 200cm each", path: "Resources/WorkI/Fence.jpg" },
-                        { id: 6, name: "Suite", year: 2015, medium: "Ink, acrylic and oil on canvas", size: "91.5 x 121.5cm", path: "Resources/WorkI/Suite.jpg" },
-                        { id: 7, name: "Step to the left, step to the right", year: 2015, medium: "Oil and oil pastel on canvas", size: "101.6 x 76.2cm", path: "Resources/WorkI/Step to the left step to the right.jpg" },
+                        { id: 5, name: "Trace of cracks", year: 2015, medium: "Charcoal, acrylic and newsprint on canvas", size: "110 x 150cm", path: "Resources/WorkI/Trace of cracks.jpg" },
+                        { id: 6, name: "The wall", year: 2016, medium: "Drawing installation, charcoal on newsprint", size: "197 x 381.5cm", path: "Resources/WorkI/The Wall.jpg" },
+                        { id: 7, name: "Fence", year: 2015, medium: "Charcoal and ink on paper", size: "150 x 200cm each", path: "Resources/WorkI/Fence.jpg" },
+                        { id: 8, name: "Step to the left, step to the right", year: 2015, medium: "Oil and oil pastel on canvas", size: "101.6 x 76.2cm", path: "Resources/WorkI/Step to the left step to the right.jpg" },
                     ]
                 },
                 {
                     name: "WorkII",
                     images: [
-                        { id: 0, name: "Final moment", year: 2015, medium: "Charcoal,  ink and oil on canvas", size: "101.6 x 76.2cm", path: "Resources/WorkII/Final moment.jpg" },
-                        { id: 1, name: "Panegyric", year: 2015, medium: "Charcoal and acrylic on canvas", size: "160 x 200cm", path: "Resources/WorkII/Panegyric.jpg" },
-                        { id: 2, name: "Don’t come back", year: 2014, medium: "Charcoal and acrylic on canvas", size: "200 x 150cm", path: "Resources/WorkII/Don't come back.jpg" },
-                        { id: 3, name: "Must it be? It must be!", year: 2014, medium: "Charcoal and acrylic on canvas", size: "160 x 200cm", path: "Resources/WorkII/Must it be It must be.jpg" },
-                        { id: 4, name: "Video game", year: 2014, medium: "Charcoal and acrylic on canvas", size: "150 x 185cm", path: "Resources/WorkII/Video game.jpg" },
-                        { id: 5, name: "Mammogram", year: 2014, medium: "Charcoal and acrylic on canvas", size: "155 x 185cm", path: "Resources/WorkII/Mammogram.jpg" },
-                        { id: 6, name: "The phone", year: 2013, medium: "Acrylic on canvas", size: "180 x 150cm", path: "Resources/WorkII/The phone.jpg" },
+                        { id: 0, name: "Suite", year: 2015, medium: "Ink, acrylic and oil on canvas", size: "91.5 x 121.5cm", path: "Resources/WorkII/Suite.jpg" },
+                        { id: 1, name: "Final moment", year: 2015, medium: "Charcoal,  ink and oil on canvas", size: "101.6 x 76.2cm", path: "Resources/WorkII/Final moment.jpg" },
+                        { id: 2, name: "Panegyric", year: 2015, medium: "Charcoal and acrylic on canvas", size: "160 x 200cm", path: "Resources/WorkII/Panegyric.jpg" },
+                        { id: 3, name: "Don’t come back", year: 2014, medium: "Charcoal and acrylic on canvas", size: "200 x 150cm", path: "Resources/WorkII/Don't come back.jpg" },
+                        { id: 4, name: "Must it be? It must be!", year: 2014, medium: "Charcoal and acrylic on canvas", size: "160 x 200cm", path: "Resources/WorkII/Must it be It must be.jpg" },
+                        { id: 5, name: "Video game", year: 2014, medium: "Charcoal and acrylic on canvas", size: "150 x 185cm", path: "Resources/WorkII/Video game.jpg" },
+                        { id: 6, name: "Mammogram", year: 2014, medium: "Charcoal and acrylic on canvas", size: "155 x 185cm", path: "Resources/WorkII/Mammogram.jpg" },
+                        { id: 7, name: "The phone", year: 2013, medium: "Acrylic on canvas", size: "180 x 150cm", path: "Resources/WorkII/The phone.jpg" },
                     ]
                 }
             ];

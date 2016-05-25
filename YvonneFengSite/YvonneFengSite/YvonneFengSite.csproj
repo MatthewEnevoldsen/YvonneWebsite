@@ -75,8 +75,10 @@
     <Content Include="Resources\WorkI\PlasterPhone.jpg" />
     <Content Include="Resources\WorkI\Shadow.jpg" />
     <Content Include="Resources\WorkI\Step to the left step to the right.jpg" />
-    <Content Include="Resources\WorkI\Suite.jpg" />
+    <Content Include="Resources\WorkII\Suite.jpg" />
+    <Content Include="Resources\WorkI\The Wall.jpg" />
     <Content Include="Resources\WorkI\Trace of cracks.jpg" />
+    <Content Include="Resources\WorkI\Up and down, in and out.jpg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
