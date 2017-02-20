@@ -61,15 +61,8 @@
     <Content Include="Resources\News\An Amnesiac%27s Stories poster.jpg" />
     <Content Include="Resources\News\CHINESE 2016 MAILOUT.jpg" />
     <Content Include="Resources\News\indigo_poster.jpg" />
+    <Content Include="Resources\News\poster.jpg" />
     <Content Include="Resources\Text\An Amnesiac%27s Stories web.jpg" />
-    <Content Include="Resources\WorkIII\Don%27t come back.jpg" />
-    <Content Include="Resources\WorkIII\Final moment.jpg" />
-    <Content Include="Resources\WorkIII\Mammogram.jpg" />
-    <Content Include="Resources\WorkIII\Must it be It must be.jpg" />
-    <Content Include="Resources\WorkIII\Panegyric.jpg" />
-    <Content Include="Resources\WorkIII\Suite.jpg" />
-    <Content Include="Resources\WorkIII\The phone.jpg" />
-    <Content Include="Resources\WorkIII\Video game.jpg" />
     <Content Include="Resources\WorkII\Fence.jpg" />
     <Content Include="Resources\WorkII\Immersive darkness.jpg" />
     <Content Include="Resources\WorkII\Jade Bracelet.jpg" />

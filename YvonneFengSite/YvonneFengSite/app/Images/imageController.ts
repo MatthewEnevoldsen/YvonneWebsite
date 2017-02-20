@@ -58,19 +58,6 @@
                         { id: 7, name: "Fence", year: 2015, medium: "Charcoal and ink on paper", size: "150 x 200cm each", path: "Resources/WorkII/Fence.jpg" },
                         { id: 8, name: "Step to the left, step to the right", year: 2015, medium: "Oil and oil pastel on canvas", size: "101.6 x 76.2cm", path: "Resources/WorkII/Step to the left step to the right.jpg" },
                     ]
-                },
-                {
-                    name: "WorkIII",
-                    images: [
-                        { id: 0, name: "Suite", year: 2015, medium: "Ink, acrylic and oil on canvas", size: "91.5 x 121.5cm", path: "Resources/WorkIII/Suite.jpg" },
-                        { id: 1, name: "Final moment", year: 2015, medium: "Charcoal,  ink and oil on canvas", size: "101.6 x 76.2cm", path: "Resources/WorkIII/Final moment.jpg" },
-                        { id: 2, name: "Panegyric", year: 2015, medium: "Charcoal and acrylic on canvas", size: "160 x 200cm", path: "Resources/WorkIII/Panegyric.jpg" },
-                        { id: 3, name: "Don’t come back", year: 2014, medium: "Charcoal and acrylic on canvas", size: "200 x 150cm", path: "Resources/WorkIII/Don't come back.jpg" },
-                        { id: 4, name: "Must it be? It must be!", year: 2014, medium: "Charcoal and acrylic on canvas", size: "160 x 200cm", path: "Resources/WorkIII/Must it be It must be.jpg" },
-                        { id: 5, name: "Video game", year: 2014, medium: "Charcoal and acrylic on canvas", size: "150 x 185cm", path: "Resources/WorkIII/Video game.jpg" },
-                        { id: 6, name: "Mammogram", year: 2014, medium: "Charcoal and acrylic on canvas", size: "155 x 185cm", path: "Resources/WorkIII/Mammogram.jpg" },
-                        { id: 7, name: "The phone", year: 2013, medium: "Acrylic on canvas", size: "180 x 150cm", path: "Resources/WorkIII/The phone.jpg" },
-                    ]
                 }
             ];
             this.manager = new Manager(_.filter(this.work, function (coll: ImageCollection) { return coll.name == $routeParams.collectionName; })[0], $location);
