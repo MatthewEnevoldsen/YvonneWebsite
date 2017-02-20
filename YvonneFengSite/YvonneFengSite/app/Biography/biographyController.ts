@@ -42,10 +42,15 @@
                 ],
                 groupExhibitions: [
                     {
+                        date: "2016",
+                        events: [{ exhibName: "Refuse: Refuge: Re-fuse", venue: "The Koppel Project, London" },
+                            { exhibName: "Indigo Vastness", venue: "The Street Gallery, UCLH, London" }]
+                    },
+                    {
                         date: "2015",
                         events: [{ exhibName: "Creekside Open 2015", venue: "A.P.T Gallery, London" },
                             { exhibName: "Psychoanalytic research in the 21st century: Where we are now", venue: " Freud Museum, London " },
-                            { exhibName: "Griffin Art Prize 2014 UK", venue: " White Moose Gallery, Barnstaple, Devon " }, ]
+                            { exhibName: "Griffin Art Prize 2014 UK", venue: " White Moose Gallery, Barnstaple, Devon " },]
                     },
                     {
                         date: "2014",

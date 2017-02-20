@@ -8,10 +8,11 @@
             $scope.categories = [
                 new Category("Work", null, [
                     new Category("I", "#Collections/WorkI", null),
-                    new Category("II", "#Collections/WorkII", null)
+                    new Category("II", "#Collections/WorkII", null),
+                    new Category("III", "#Collections/WorkIII", null)
                 ]),
                 new Category("Drawing", null, [
-                    new Category("I", "#Collections/Drawings", null),
+                    //new Category("I", "#Collections/Drawings", null),
                     new Category("Sketchbook", "#Collections/Sketches", null)
                 ]),
                 new Category("Publication", "#Publications", null),

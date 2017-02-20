@@ -7,7 +7,7 @@ var News;
         }
         Controller.$inject = ['$scope'];
         return Controller;
-    })();
+    }());
     News.Controller = Controller;
 })(News || (News = {}));
 //# sourceMappingURL=newsController.js.map

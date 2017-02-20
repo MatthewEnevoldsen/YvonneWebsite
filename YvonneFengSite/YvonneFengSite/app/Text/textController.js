@@ -23,7 +23,7 @@ var TextPage;
         }
         Controller.$inject = ['$scope'];
         return Controller;
-    })();
+    }());
     TextPage.Controller = Controller;
 })(TextPage || (TextPage = {}));
 //# sourceMappingURL=textController.js.map

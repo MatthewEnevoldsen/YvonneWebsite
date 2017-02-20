@@ -36,7 +36,7 @@ var Images;
             this.location = $location;
         }
         return Manager;
-    })();
+    }());
     Images.Manager = Manager;
 })(Images || (Images = {}));
 //# sourceMappingURL=imageManager.js.map

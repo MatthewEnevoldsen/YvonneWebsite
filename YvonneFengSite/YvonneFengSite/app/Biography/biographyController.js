@@ -40,6 +40,11 @@ var Biography;
                 ],
                 groupExhibitions: [
                     {
+                        date: "2016",
+                        events: [{ exhibName: "Refuse: Refuge: Re-fuse", venue: "The Koppel Project, London" },
+                            { exhibName: "Indigo Vastness", venue: "The Street Gallery, UCLH, London" }]
+                    },
+                    {
                         date: "2015",
                         events: [{ exhibName: "Creekside Open 2015", venue: "A.P.T Gallery, London" },
                             { exhibName: "Psychoanalytic research in the 21st century: Where we are now", venue: " Freud Museum, London " },
@@ -77,27 +82,27 @@ var Biography;
         }
         Controller.$inject = ['$scope'];
         return Controller;
-    })();
+    }());
     Biography.Controller = Controller;
     var CV = (function () {
         function CV() {
         }
         return CV;
-    })();
+    }());
     var YearedExhibitions = (function () {
         function YearedExhibitions() {
         }
         return YearedExhibitions;
-    })();
+    }());
     var YearedEvents = (function () {
         function YearedEvents() {
         }
         return YearedEvents;
-    })();
+    }());
     var Exhibition = (function () {
         function Exhibition() {
         }
         return Exhibition;
-    })();
+    }());
 })(Biography || (Biography = {}));
 //# sourceMappingURL=biographyController.js.map
