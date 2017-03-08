@@ -42,6 +42,10 @@
                 ],
                 groupExhibitions: [
                     {
+                        date: "2017",
+                        events: [{ exhibName: "The Intercontinental", venue: "Roaming Room, London" }]
+                    },
+                    {
                         date: "2016",
                         events: [{ exhibName: "Refuse: Refuge: Re-fuse", venue: "The Koppel Project, London" },
                             { exhibName: "Indigo Vastness", venue: "The Street Gallery, UCLH, London" }]
