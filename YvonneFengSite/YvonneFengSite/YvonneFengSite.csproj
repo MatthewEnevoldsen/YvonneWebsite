@@ -58,11 +58,13 @@
     <Content Include="Resources\Drawings\sketchbook\6.jpg" />
     <Content Include="Resources\Drawings\sketchbook\7.jpg" />
     <Content Include="Resources\Home\front.jpg" />
+    <Content Include="Resources\News\MysticismAndInsecurity.png" />
     <Content Include="Resources\News\An Amnesiac%27s Stories poster.jpg" />
     <Content Include="Resources\News\CHINESE 2016 MAILOUT.jpg" />
     <Content Include="Resources\News\indigo_poster.jpg" />
     <Content Include="Resources\News\On the Verge Invitation-1.jpg" />
     <Content Include="Resources\News\poster.jpg" />
+    <Content Include="Resources\News\Slade Poster 17.jpg" />
     <Content Include="Resources\Text\An Amnesiac%27s Stories web.jpg" />
     <Content Include="Resources\WorkIII\Immersive darkness.jpg" />
     <Content Include="Resources\WorkIII\Jade Bracelet.jpg" />
@@ -77,8 +79,10 @@
     <Content Include="Resources\WorkII\Telescreen 03.jpg" />
     <Content Include="Resources\WorkII\Telescreen 04.jpg" />
     <Content Include="Resources\WorkII\Telescreens.jpg" />
+    <Content Include="Resources\WorkI\A rebellious act.jpg" />
     <Content Include="Resources\WorkI\Greener on the other side.jpg" />
     <Content Include="Resources\WorkI\Climax a victory.jpg" />
+    <Content Include="Resources\WorkI\Reaching.jpg" />
     <Content Include="Resources\WorkI\The size of apple, the size of war.jpg" />
     <Content Include="Resources\WorkIII\Mother and child.jpg" />
     <Content Include="Resources\WorkI\Window to the world.jpg" />

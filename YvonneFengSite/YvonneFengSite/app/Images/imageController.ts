@@ -42,7 +42,9 @@
                         { id: 0, name: "Greener on the other side?", year: 2017, medium: "Pastel, acrylic and oil on canvas", size: "150 x 200cm", path: "Resources/WorkI/Greener on the other side.jpg" },
                         { id: 1, name: "Climax a victory", year: 2016, medium: "Pastel, acrylic and oil on canvas", size: "170 x 160cm", path: "Resources/WorkI/Climax a victory.jpg" },
                         { id: 2, name: "The size of apple, the size of war", year: 2016, medium: "Pastel, acrylic and oil on canvas", size: "190 x 200cm", path: "Resources/WorkI/The size of apple, the size of war.jpg" },
-                        { id: 4, name: "Window to the world", year: 2017, medium: "Pastel, acrylic and oil on canvas", size: "106.5 x 76cm", path: "Resources/WorkI/Window to the world.jpg" },
+                        { id: 3, name: "Window to the world", year: 2017, medium: "Pastel, acrylic and oil on canvas", size: "106.5 x 76cm", path: "Resources/WorkI/Window to the world.jpg" },
+                        { id: 4, name: "A rebellious act", year: 2017, medium: "Pastel, acrylic and oil on canvas", size: "170 x 160cm", path: "Resources/WorkI/A rebellious act.jpg" },
+                        { id: 5, name: "Reaching", year: 2017, medium: "Graphite, acrylic and oil on canvas", size: "200 x 180cm", path: "Resources/WorkI/Reaching.jpg" },
                     ]
                 },
                 {

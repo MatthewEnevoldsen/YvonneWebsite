@@ -41,7 +41,8 @@ var Biography;
                 groupExhibitions: [
                     {
                         date: "2017",
-                        events: [{ exhibName: "The Intercontinental", venue: "Roaming Room, London" }]
+                        events: [{ exhibName: "The Intercontinental", venue: "Roaming Room, London" },
+                            { exhibName: "Tipping Point", venue: "The Foundry, London" }]
                     },
                     {
                         date: "2016",
