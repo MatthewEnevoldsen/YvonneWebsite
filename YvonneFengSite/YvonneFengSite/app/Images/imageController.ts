@@ -11,19 +11,13 @@
             $location: ng.ILocationService,
             pictures: ImageDetails[]) {
             this.work = [
-                //{
-                //    name: "Drawings",
-                //    images: [
-                //        { id: 0, name: "Delete", year: 2015, medium: "Ink on paper", size: "29.7 x 42cm", path: "Resources/Drawings/I/Delete.jpg" },
-                //        { id: 1, name: "You are one of us", year: 2014, medium: "Ink on Chinese paper", size: "69.5 x 45.5cm", path: "Resources/Drawings/I/You are one of us.jpg" },
-                //        { id: 2, name: "C0415", year: 2014, medium: "Ink on Chinese paper", size: "69.5 x 45.5cm", path: "Resources/Drawings/I/C0415.jpg" },
-                //        { id: 3, name: "Sleepless five years ahead", year: 2014, medium: "Ink on paper", size: "53 x 38cm", path: "Resources/Drawings/I/Sleepless five years ahead.jpg" },
-                //        { id: 4, name: "Hand", year: 2014, medium: "Ink on paper", size: "42 x 29.7cm", path: "Resources/Drawings/I/Hand.jpg" },
-                //        { id: 5, name: "10pm", year: 2014, medium: "Ink on paper", size: "53 x 38cm", path: "Resources/Drawings/I/10pm.jpg" },
-                //        { id: 6, name: "Unblock", year: 2014, medium: "Ink on paper", size: "53 x 38cm", path: "Resources/Drawings/I/Unblock.jpg" },
-                //        { id: 7, name: "Sit", year: 2014, medium: "Ink on paper", size: "29.7 x 42cm", path: "Resources/Drawings/I/Sit.jpg" },
-                //    ]
-                //},
+                {
+                    name: "InvisibleWall",
+                    images: [
+                        { id: 0, name: "Invisible Wall", year: 2016, medium: "Ink on wall, at The Foundry, London, Commissioned by Beaconsfield Gallery", size: "3 x 6m", path: "Resources/Drawings/InvisibleWall/Foundry Wall 2.jpg" },
+                        { id: 1, name: "Invisible Wall", year: 2016, medium: "Ink on wall, at The Foundry, London, Commissioned by Beaconsfield Gallery", size: "3 x 6m", path: "Resources/Drawings/InvisibleWall/Foundry Wall 3.jpg" },
+                    ]
+                },
                 {
                     name: "Sketches",
                     images: [
@@ -45,16 +39,20 @@
                         { id: 3, name: "Window to the world", year: 2017, medium: "Pastel, acrylic and oil on canvas", size: "106.5 x 76cm", path: "Resources/WorkI/Window to the world.jpg" },
                         { id: 4, name: "A rebellious act", year: 2017, medium: "Pastel, acrylic and oil on canvas", size: "170 x 160cm", path: "Resources/WorkI/A rebellious act.jpg" },
                         { id: 5, name: "Reaching", year: 2017, medium: "Graphite, acrylic and oil on canvas", size: "200 x 180cm", path: "Resources/WorkI/Reaching.jpg" },
+                        { id: 6, name: "Cut", year: 2017, medium: "Oil on canvas", size: "61 x 40cm", path: "Resources/WorkI/cut.jpg" },
+                        { id: 7, name: "I will take your tears for love", year: 2017, medium: "Oil on canvas", size: "61 x 61cm", path: "Resources/WorkI/I will take your tears for love.jpg" },
+                        { id: 8, name: "Shadow theatre: Man-made war", year: 2017, medium: "Oil on canvas", size: "150 x 200cm", path: "Resources/WorkI/Shadow theatre man-made war.jpg" },
+                        { id: 9, name: "Unreachable sky", year: 2017, medium: "Ink, graphite and oil on canvas", size: "200 x 130cm", path: "Resources/WorkI/Unreachable Sky.jpg" },
                     ]
                 },
                 {
                     name: "WorkII",
                     images: [
-                        { id: 0, name: "Telescreen 04", year: 2017, medium: "Oil on aluminum", size: "30 x 42cm", path: "Resources/WorkII/Telescreen 04.jpg" },
-                        { id: 1, name: "Telescreen 03", year: 2017, medium: "Oil on aluminum", size: "30 x 35cm", path: "Resources/WorkII/Telescreen 03.jpg" },
-                        { id: 2, name: "Telescreen 02", year: 2017, medium: "Oil on aluminum", size: "30 x 21cm", path: "Resources/WorkII/Telescreen 02.jpg" },
-                        { id: 3, name: "Telescreen 01", year: 2017, medium: "Oil on aluminum", size: "30 x 42cm", path: "Resources/WorkII/Telescreen 01.jpg" },
-                        { id: 4, name: "Telescreens", year: 2016, medium: "Oil on aluminum", size: "160 x 110cm", path: "Resources/WorkII/Telescreens.jpg" },
+                        { id: 0, name: "Telescreen 04", year: 2017, medium: "Oil on etched aluminum", size: "30 x 42cm", path: "Resources/WorkII/Telescreen 04.jpg" },
+                        { id: 1, name: "Telescreen 03", year: 2017, medium: "Oil on etched aluminum", size: "30 x 35cm", path: "Resources/WorkII/Telescreen 03.jpg" },
+                        { id: 2, name: "Telescreen 02", year: 2017, medium: "Oil on etched aluminum", size: "30 x 21cm", path: "Resources/WorkII/Telescreen 02.jpg" },
+                        { id: 3, name: "Telescreen 01", year: 2017, medium: "Oil on etched aluminum", size: "30 x 42cm", path: "Resources/WorkII/Telescreen 01.jpg" },
+                        { id: 4, name: "Telescreens", year: 2016, medium:   "Spray paint, ink and oil on canvas", size: "160 x 110cm", path: "Resources/WorkII/Telescreens.jpg" },
                     ]
                 },
                 {

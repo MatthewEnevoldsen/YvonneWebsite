@@ -5,9 +5,9 @@ var Contact;
             this.$scope = $scope;
             $scope.message = "Yvonne.ywf@gmail.com";
         }
-        Controller.$inject = ['$scope'];
         return Controller;
     }());
+    Controller.$inject = ['$scope'];
     Contact.Controller = Controller;
 })(Contact || (Contact = {}));
 //# sourceMappingURL=contactController.js.map

@@ -5,9 +5,9 @@ var News;
             this.$scope = $scope;
             $scope.message = "Yvonne.wyf@gmail.com";
         }
-        Controller.$inject = ['$scope'];
         return Controller;
     }());
+    Controller.$inject = ['$scope'];
     News.Controller = Controller;
 })(News || (News = {}));
 //# sourceMappingURL=newsController.js.map

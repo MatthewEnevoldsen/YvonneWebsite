@@ -21,9 +21,15 @@ var TextPage;
             //        ];
             //this.selectedText = null;
         }
-        Controller.$inject = ['$scope'];
         return Controller;
     }());
+    Controller.$inject = ['$scope'];
     TextPage.Controller = Controller;
+    //export class Text {
+    //    author: string;
+    //    bookLink: string;
+    //    imageUrl: string;
+    //    textUrl: string;
+    //}
 })(TextPage || (TextPage = {}));
 //# sourceMappingURL=textController.js.map

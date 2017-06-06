@@ -10,7 +10,7 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.2</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -42,6 +42,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Icon.png" />
     <Content Include="index.html" />
+    <Content Include="Resources\Drawings\InvisibleWall\Foundry wall 2.jpg" />
+    <Content Include="Resources\Drawings\InvisibleWall\Foundry wall 3.jpg" />
     <Content Include="Resources\Drawings\I\10pm.jpg" />
     <Content Include="Resources\Drawings\I\C0415.jpg" />
     <Content Include="Resources\Drawings\I\Delete.jpg" />
@@ -58,6 +60,7 @@
     <Content Include="Resources\Drawings\sketchbook\6.jpg" />
     <Content Include="Resources\Drawings\sketchbook\7.jpg" />
     <Content Include="Resources\Home\front.jpg" />
+    <Content Include="Resources\News\Judgment Calls_mail.jpg" />
     <Content Include="Resources\News\MysticismAndInsecurity.png" />
     <Content Include="Resources\News\An Amnesiac%27s Stories poster.jpg" />
     <Content Include="Resources\News\CHINESE 2016 MAILOUT.jpg" />
@@ -65,6 +68,7 @@
     <Content Include="Resources\News\On the Verge Invitation-1.jpg" />
     <Content Include="Resources\News\poster.jpg" />
     <Content Include="Resources\News\Slade Poster 17.jpg" />
+    <Content Include="Resources\News\The Final MD4 talk performance chat.jpg" />
     <Content Include="Resources\Text\An Amnesiac%27s Stories web.jpg" />
     <Content Include="Resources\WorkIII\Immersive darkness.jpg" />
     <Content Include="Resources\WorkIII\Jade Bracelet.jpg" />
@@ -80,11 +84,15 @@
     <Content Include="Resources\WorkII\Telescreen 04.jpg" />
     <Content Include="Resources\WorkII\Telescreens.jpg" />
     <Content Include="Resources\WorkI\A rebellious act.jpg" />
+    <Content Include="Resources\WorkI\cut.jpg" />
     <Content Include="Resources\WorkI\Greener on the other side.jpg" />
     <Content Include="Resources\WorkI\Climax a victory.jpg" />
+    <Content Include="Resources\WorkI\I will take your tears for love.jpg" />
     <Content Include="Resources\WorkI\Reaching.jpg" />
+    <Content Include="Resources\WorkI\Shadow theatre man-made war.jpg" />
     <Content Include="Resources\WorkI\The size of apple, the size of war.jpg" />
     <Content Include="Resources\WorkIII\Mother and child.jpg" />
+    <Content Include="Resources\WorkI\Unreachable Sky.jpg" />
     <Content Include="Resources\WorkI\Window to the world.jpg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />

@@ -12,7 +12,8 @@ var NavBar;
                     new Category("III", "#Collections/WorkIII", null)
                 ]),
                 new Category("Drawing", null, [
-                    new Category("Sketchbook", "#Collections/Sketches", null)
+                    new Category("Sketchbook", "#Collections/Sketches", null),
+                    new Category("Invisible Wall", "#Collections/InvisibleWall", null)
                 ]),
                 new Category("Publication", "#Publications", null),
                 new Category("CV", "#Biography", null),
@@ -21,9 +22,9 @@ var NavBar;
             ];
             $scope.title = "Home";
         }
-        Controller.$inject = ['$scope'];
         return Controller;
     }());
+    Controller.$inject = ['$scope'];
     NavBar.Controller = Controller;
     var Category = (function () {
         function Category(title, link, subCategories) {

@@ -5,9 +5,9 @@ var Home;
             this.$scope = $scope;
             $scope.message = "";
         }
-        Controller.$inject = ['$scope'];
         return Controller;
     }());
+    Controller.$inject = ['$scope'];
     Home.Controller = Controller;
 })(Home || (Home = {}));
 //# sourceMappingURL=homeController.js.map

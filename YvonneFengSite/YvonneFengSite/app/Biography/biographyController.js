@@ -41,7 +41,10 @@ var Biography;
                 groupExhibitions: [
                     {
                         date: "2017",
-                        events: [{ exhibName: "The Intercontinental", venue: "Roaming Room, London" },
+                        events: [{ exhibName: "Slade Graduate Degree Show 2017", venue: "Slade School of Fine Art, UCL, London" },
+                            { exhibName: "Monologue Dialogue 4: Mysticism and Insecurity", venue: "The Koppel Project, London" },
+                            { exhibName: "The Intercontinental", venue: "Roaming Room, London" },
+                            { exhibName: "On The Verge", venue: "12 Star Gallery, London" },
                             { exhibName: "Tipping Point", venue: "The Foundry, London" }]
                     },
                     {
@@ -85,9 +88,9 @@ var Biography;
                 ],
             };
         }
-        Controller.$inject = ['$scope'];
         return Controller;
     }());
+    Controller.$inject = ['$scope'];
     Biography.Controller = Controller;
     var CV = (function () {
         function CV() {
