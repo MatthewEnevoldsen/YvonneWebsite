@@ -66,6 +66,7 @@
     <Content Include="Resources\News\CHINESE 2016 MAILOUT.jpg" />
     <Content Include="Resources\News\indigo_poster.jpg" />
     <Content Include="Resources\News\On the Verge Invitation-1.jpg" />
+    <Content Include="Resources\News\Joseonjok’s Ambiguous Identity.jpg" />
     <Content Include="Resources\News\poster.jpg" />
     <Content Include="Resources\News\Slade Poster 17.jpg" />
     <Content Include="Resources\News\The Final MD4 talk performance chat.jpg" />
@@ -93,7 +94,6 @@
     <Content Include="Resources\WorkI\The size of apple, the size of war.jpg" />
     <Content Include="Resources\WorkIII\Mother and child.jpg" />
     <Content Include="Resources\WorkI\Unreachable Sky.jpg" />
-    <Content Include="Resources\WorkI\Window to the world.jpg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
