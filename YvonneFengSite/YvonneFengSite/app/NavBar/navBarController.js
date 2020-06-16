@@ -8,7 +8,7 @@ var NavBar;
             $scope.categories = [
                 new Category("Work", null, [
                     new Category("Greener On The Other Side?", "#Collections/GreenerOnTheOtherSide", null),
-                    new Category("Body As Metaphor", "#Collections/BodyAsMetaphor", null),
+                    new Category("The Body As Metaphor", "#Collections/BodyAsMetaphor", null),
                     new Category("Telescreens", "#Collections/Telescreens", null),
                     new Category("An Amnesiac's Stories", "#Collections/AmnesiacsStories", null),
                 ]),

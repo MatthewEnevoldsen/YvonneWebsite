@@ -37,11 +37,14 @@ var Images;
                 {
                     name: "BodyAsMetaphor",
                     images: [
-                        { id: 0, name: "A rebellious act", year: 2017, medium: "Pastel, acrylic and oil on canvas", size: "170 x 160cm", path: "Resources/BodyAsMetaphor/A rebellious act.jpg" },
-                        { id: 1, name: "Climax a victory", year: 2016, medium: "Pastel, acrylic and oil on canvas", size: "170 x 160cm", path: "Resources/BodyAsMetaphor/Climax a victory.jpg" },
-                        { id: 2, name: "Vicissitudes of life (up)", year: 2017, medium: "Acrylic, pigment and oil on canvas", size: "130 x 180cm", path: "Resources/BodyAsMetaphor/Vicissitudes of Life (up).jpg" },
-                        { id: 3, name: "Vicissitudes of life (down)", year: 2017, medium: "Acrylic, pigment and oil on canvas", size: "130 x 180cm", path: "Resources/BodyAsMetaphor/Vicissitudes of Life (down).jpg" },
-                        { id: 4, name: "Mise-en-scène", year: 2017, medium: "Exhibition View", size: "Chelsea Waterside ArtSpace, London", path: "Resources/BodyAsMetaphor/miseenscene.jpg" },
+                        { id: 0, name: "Quarantine", year: 2020, medium: "Graphite and oil on canvas", size: "190 x 150cm", path: "Resources/BodyAsMetaphor/Quarantine.jpg" },
+                        { id: 1, name: "The Constitution of Collectivity", year: 2020, medium: "Oil on canvas", size: "90 x170cm", path: "Resources/BodyAsMetaphor/The Constitution of Collectivity.jpg" },
+                        { id: 2, name: "Boundary", year: 2019, medium: "Oil on canvas", size: "200 x 150cm", path: "Resources/BodyAsMetaphor/Boundary.jpg" },
+                        { id: 3, name: "A rebellious act", year: 2017, medium: "Pastel, acrylic and oil on canvas", size: "170 x 160cm", path: "Resources/BodyAsMetaphor/A rebellious act.jpg" },
+                        { id: 4, name: "Climax a victory", year: 2016, medium: "Pastel, acrylic and oil on canvas", size: "170 x 160cm", path: "Resources/BodyAsMetaphor/Climax a victory.jpg" },
+                        { id: 5, name: "Vicissitudes of life (up)", year: 2017, medium: "Acrylic, pigment and oil on canvas", size: "130 x 180cm", path: "Resources/BodyAsMetaphor/Vicissitudes of Life (up).jpg" },
+                        { id: 6, name: "Vicissitudes of life (down)", year: 2017, medium: "Acrylic, pigment and oil on canvas", size: "130 x 180cm", path: "Resources/BodyAsMetaphor/Vicissitudes of Life (down).jpg" },
+                        { id: 7, name: "Mise-en-scène", year: 2017, medium: "Exhibition View", size: "Chelsea Waterside ArtSpace, London", path: "Resources/BodyAsMetaphor/miseenscene.jpg" },
                     ]
                 },
                 {
