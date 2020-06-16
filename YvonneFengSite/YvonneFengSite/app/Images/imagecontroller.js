@@ -32,6 +32,7 @@ var Images;
                         { id: 4, name: "Cut", year: 2017, medium: "Oil on canvas", size: "61 x 40cm", path: "Resources/Greener On The Other Side/cut.jpg" },
                         { id: 5, name: "I will take your tears for love", year: 2017, medium: "Oil on canvas", size: "61 x 61cm", path: "Resources/Greener On The Other Side/I will take your tears for love.jpg" },
                         { id: 6, name: "Unreachable sky", year: 2017, medium: "Ink, graphite and oil on canvas", size: "200 x 130cm", path: "Resources/Greener On The Other Side/Unreachable Sky.jpg" },
+                        { id: 7, name: "Greener on the other side?", year: 2017, medium: "Exhibition View ", size: "", path: "Resources/Greener On The Other Side/Installation view.jpg" },
                     ]
                 },
                 {
