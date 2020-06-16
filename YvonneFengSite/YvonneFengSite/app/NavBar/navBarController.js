@@ -7,9 +7,10 @@ var NavBar;
             $scope.name = "Whatup";
             $scope.categories = [
                 new Category("Work", null, [
-                    new Category("I", "#Collections/WorkI", null),
-                    new Category("II", "#Collections/WorkII", null),
-                    new Category("III", "#Collections/WorkIII", null)
+                    new Category("Greener On The Other Side?", "#Collections/GreenerOnTheOtherSide", null),
+                    new Category("Body As Metaphor", "#Collections/BodyAsMetaphor", null),
+                    new Category("Telescreens", "#Collections/Telescreens", null),
+                    new Category("An Amnesiac's Stories", "#Collections/AmnesiacsStories", null),
                 ]),
                 new Category("Drawing", null, [
                     new Category("Sketchbook", "#Collections/Sketches", null),

@@ -17,6 +17,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.css" />
@@ -42,6 +43,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Icon.png" />
     <Content Include="index.html" />
+    <Content Include="Resources\AnAmnesiacsStories\Installation 1.jpg" />
+    <Content Include="Resources\BodyAsMetaphor\A rebellious act.jpg" />
+    <Content Include="Resources\BodyAsMetaphor\Climax a victory.jpg" />
+    <Content Include="Resources\BodyAsMetaphor\miseenscene.jpg" />
+    <Content Include="Resources\BodyAsMetaphor\Vicissitudes of Life %28down%29.jpg" />
+    <Content Include="Resources\BodyAsMetaphor\Vicissitudes of Life %28up%29.jpg" />
     <Content Include="Resources\Drawings\InvisibleWall\Foundry wall 2.jpg" />
     <Content Include="Resources\Drawings\InvisibleWall\Foundry wall 3.jpg" />
     <Content Include="Resources\Drawings\I\10pm.jpg" />
@@ -59,7 +66,11 @@
     <Content Include="Resources\Drawings\sketchbook\5.jpg" />
     <Content Include="Resources\Drawings\sketchbook\6.jpg" />
     <Content Include="Resources\Drawings\sketchbook\7.jpg" />
+    <Content Include="Resources\Greener On The Other Side\I have come this far.jpg" />
+    <Content Include="Resources\Greener On The Other Side\Installation View.jpg" />
     <Content Include="Resources\Home\front.jpg" />
+    <Content Include="Resources\Home\front_old.jpg" />
+    <Content Include="Resources\News\Chelsea Waterside ArtSpace evite %281%29-page-001.jpg" />
     <Content Include="Resources\News\Judgment Calls_mail.jpg" />
     <Content Include="Resources\News\MysticismAndInsecurity.png" />
     <Content Include="Resources\News\An Amnesiac%27s Stories poster.jpg" />
@@ -68,32 +79,30 @@
     <Content Include="Resources\News\On the Verge Invitation-1.jpg" />
     <Content Include="Resources\News\Joseonjok’s Ambiguous Identity.jpg" />
     <Content Include="Resources\News\poster.jpg" />
+    <Content Include="Resources\News\She Performs.jpg" />
     <Content Include="Resources\News\Slade Poster 17.jpg" />
     <Content Include="Resources\News\The Final MD4 talk performance chat.jpg" />
     <Content Include="Resources\Text\An Amnesiac%27s Stories web.jpg" />
-    <Content Include="Resources\WorkIII\Immersive darkness.jpg" />
-    <Content Include="Resources\WorkIII\Jade Bracelet.jpg" />
-    <Content Include="Resources\WorkIII\PlasterPhone.jpg" />
-    <Content Include="Resources\WorkIII\Shadow.jpg" />
-    <Content Include="Resources\WorkIII\Step to the left step to the right.jpg" />
-    <Content Include="Resources\WorkIII\The Wall.jpg" />
-    <Content Include="Resources\WorkIII\Trace of cracks.jpg" />
-    <Content Include="Resources\WorkIII\Up and down, in and out.jpg" />
-    <Content Include="Resources\WorkII\Telescreen 01.jpg" />
-    <Content Include="Resources\WorkII\Telescreen 02.jpg" />
-    <Content Include="Resources\WorkII\Telescreen 03.jpg" />
-    <Content Include="Resources\WorkII\Telescreen 04.jpg" />
-    <Content Include="Resources\WorkII\Telescreens.jpg" />
-    <Content Include="Resources\WorkI\A rebellious act.jpg" />
-    <Content Include="Resources\WorkI\cut.jpg" />
-    <Content Include="Resources\WorkI\Greener on the other side.jpg" />
-    <Content Include="Resources\WorkI\Climax a victory.jpg" />
-    <Content Include="Resources\WorkI\I will take your tears for love.jpg" />
-    <Content Include="Resources\WorkI\Reaching.jpg" />
-    <Content Include="Resources\WorkI\Shadow theatre man-made war.jpg" />
-    <Content Include="Resources\WorkI\The size of apple, the size of war.jpg" />
-    <Content Include="Resources\WorkIII\Mother and child.jpg" />
-    <Content Include="Resources\WorkI\Unreachable Sky.jpg" />
+    <Content Include="Resources\AnAmnesiacsStories\Immersive darkness.jpg" />
+    <Content Include="Resources\AnAmnesiacsStories\Jade Bracelet.jpg" />
+    <Content Include="Resources\AnAmnesiacsStories\PlasterPhone.jpg" />
+    <Content Include="Resources\AnAmnesiacsStories\Shadow.jpg" />
+    <Content Include="Resources\AnAmnesiacsStories\Step to the left step to the right.jpg" />
+    <Content Include="Resources\AnAmnesiacsStories\The Wall.jpg" />
+    <Content Include="Resources\AnAmnesiacsStories\Trace of cracks.jpg" />
+    <Content Include="Resources\AnAmnesiacsStories\Up and down, in and out.jpg" />
+    <Content Include="Resources\Telescreens\Telescreen 01.jpg" />
+    <Content Include="Resources\Telescreens\Telescreen 02.jpg" />
+    <Content Include="Resources\Telescreens\Telescreen 03.jpg" />
+    <Content Include="Resources\Telescreens\Telescreen 04.jpg" />
+    <Content Include="Resources\Telescreens\Telescreens.jpg" />
+    <Content Include="Resources\Greener On The Other Side\cut.jpg" />
+    <Content Include="Resources\Greener On The Other Side\Greener on the other side.jpg" />
+    <Content Include="Resources\Greener On The Other Side\I will take your tears for love.jpg" />
+    <Content Include="Resources\Greener On The Other Side\Reaching.jpg" />
+    <Content Include="Resources\Greener On The Other Side\The size of apple, the size of war.jpg" />
+    <Content Include="Resources\AnAmnesiacsStories\Mother and child.jpg" />
+    <Content Include="Resources\Greener On The Other Side\Unreachable Sky.jpg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />

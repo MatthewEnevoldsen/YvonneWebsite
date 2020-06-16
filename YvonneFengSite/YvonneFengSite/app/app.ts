@@ -4,7 +4,7 @@ module AngularDefinition {
     'use strict';
 
     var app = angular.module('YvonnesArt', ['ngRoute', 'ui.bootstrap', 'ngAnimate'])
-        .directive('resize', function ($window) {
+        .directive('resize', [function ($window: any) {
             return function (scope: any, element: any) {
                 scope.getWindowDimensions = function () {
                     return {
@@ -30,7 +30,7 @@ module AngularDefinition {
                     scope.$apply();
                 });
             }
-        })
+        }])
         .controller('biographyController', Biography.Controller)
         .controller('homeController', Home.Controller)
         .controller('newsController', News.Controller)

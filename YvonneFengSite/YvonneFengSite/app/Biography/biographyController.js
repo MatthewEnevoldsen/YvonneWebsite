@@ -21,6 +21,10 @@ var Biography;
                 ],
                 awards: [
                     {
+                        year: "2017",
+                        descs: ["Coldstream Prize, UCL"]
+                    },
+                    {
                         year: "2015",
                         descs: ["Excellence in Drawing Award, The Arts Club Charitable Trust (winner)"]
                     },
@@ -36,12 +40,15 @@ var Biography;
                 soloExhibitions: [{
                         date: "2015",
                         events: [{ exhibName: "An Amnesiac's Stories", venue: "Hundred Years Gallery, London" }]
-                    }
+                    },
                 ],
-                groupExhibitions: [
-                    {
+                groupExhibitions: [{
+                        date: "2018",
+                        events: [{ exhibName: "She Performs", venue: "London Gallery West Project Space" }]
+                    }, {
                         date: "2017",
-                        events: [{ exhibName: "Slade Graduate Degree Show 2017", venue: "Slade School of Fine Art, UCL, London" },
+                        events: [{ exhibName: "Beyond the Borders: Joseonjok’s Ambiguous Identity", venue: "Crypt Gallery, London" },
+                            { exhibName: "Slade Graduate Degree Show 2017", venue: "Slade School of Fine Art, UCL, London" },
                             { exhibName: "Monologue Dialogue 4: Mysticism and Insecurity", venue: "The Koppel Project, London" },
                             { exhibName: "The Intercontinental", venue: "Roaming Room, London" },
                             { exhibName: "On The Verge", venue: "12 Star Gallery, London" },
