@@ -36,4 +36,3 @@ var NavBar;
         return Category;
     }());
 })(NavBar || (NavBar = {}));
-//# sourceMappingURL=navBarController.js.map

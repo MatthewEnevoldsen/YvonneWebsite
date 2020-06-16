@@ -68,4 +68,3 @@ var AngularDefinition;
     });
 })(AngularDefinition || (AngularDefinition = {}));
 document.title = "Yvonne Feng";
-//# sourceMappingURL=app.js.map

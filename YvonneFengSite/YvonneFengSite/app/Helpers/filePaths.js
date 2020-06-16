@@ -5,4 +5,3 @@ var Filepaths;
     }
     Filepaths.getFilename = getFilename;
 })(Filepaths || (Filepaths = {}));
-//# sourceMappingURL=filepaths.js.map

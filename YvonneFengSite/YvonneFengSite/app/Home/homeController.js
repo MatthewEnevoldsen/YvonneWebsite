@@ -10,4 +10,3 @@ var Home;
     Controller.$inject = ['$scope'];
     Home.Controller = Controller;
 })(Home || (Home = {}));
-//# sourceMappingURL=homeController.js.map

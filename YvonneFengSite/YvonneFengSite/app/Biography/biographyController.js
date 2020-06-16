@@ -3,7 +3,6 @@ var Biography;
     var Controller = (function () {
         function Controller($scope) {
             this.$scope = $scope;
-            //$scope.sections = this.getBio();
             $scope.cv = {
                 education: [
                     {
@@ -127,4 +126,3 @@ var Biography;
         return Exhibition;
     }());
 })(Biography || (Biography = {}));
-//# sourceMappingURL=biographyController.js.map

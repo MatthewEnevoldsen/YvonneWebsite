@@ -10,4 +10,3 @@ var Contact;
     Controller.$inject = ['$scope'];
     Contact.Controller = Controller;
 })(Contact || (Contact = {}));
-//# sourceMappingURL=contactController.js.map

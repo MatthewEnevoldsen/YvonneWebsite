@@ -85,4 +85,3 @@ var Images;
     Controller.$inject = ['$scope', '$routeParams', '$location'];
     Images.Controller = Controller;
 })(Images || (Images = {}));
-//# sourceMappingURL=imageController.js.map

@@ -1,7 +1,3 @@
-/// <reference path="../helpers/arrays.ts" />
-/// <reference path="../../scripts/typings/angularjs/angular.d.ts" />
-/// <reference path="../../scripts/typings/underscore/underscore.d.ts" />
-/// <reference path="imagecontroller.ts" />
 var Images;
 (function (Images) {
     var Manager = (function () {
@@ -39,4 +35,3 @@ var Images;
     }());
     Images.Manager = Manager;
 })(Images || (Images = {}));
-//# sourceMappingURL=imageManager.js.map
