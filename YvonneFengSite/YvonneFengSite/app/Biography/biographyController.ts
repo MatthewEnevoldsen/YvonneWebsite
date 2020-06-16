@@ -8,8 +8,12 @@
             $scope.cv = {
                 education: [
                     {
-                        year: "2014-",
+                        year: "2019",
                         descs: ["PhD Fine Art (practice-led), Slade School of Fine Art, UCL, London"]
+                    },
+                    {
+                        year: "",
+                        descs: ["Thesis title: Tracing the Unspeakable: Painting as Embodied Seeing"]
                     },
                     {
                         year: "2014",
@@ -45,6 +49,9 @@
                 },
                 ],
                 groupExhibitions: [{
+                        date: "2019",
+                        events: [{ exhibName: "Figurative Now", venue: "Daniel Benjamin Gallery, London" }]
+                    },{
                         date: "2018",
                         events: [{ exhibName: "She Performs", venue: "London Gallery West Project Space" }]
                     },{
