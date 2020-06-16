@@ -75,6 +75,7 @@
                         { id: 7, name: "The wall", year: 2016, medium: "Drawing installation, charcoal on newsprint", size: "197 x 381.5cm", path: "Resources/AnAmnesiacsStories/The Wall.jpg" },
                         { id: 8, name: "Step to the left, step to the right", year: 2015, medium: "Oil and oil pastel on canvas", size: "101.6 x 76.2cm", path: "Resources/AnAmnesiacsStories/Step to the left step to the right.jpg" },
                         { id: 9, name: "An Amnesiac's Stories", year: 2015, medium: "Exhibition View", size: "Hundred Years Gallary, London", path: "Resources/AnAmnesiacsStories/Installation 1.jpg" },
+                        { id: 10, name: "An Amnesiac's Stories", year: 2015, medium: "Installation View", size: "", path: "Resources/AnAmnesiacsStories/Viva installation.jpg" },
                     ]
                 }
             ];
